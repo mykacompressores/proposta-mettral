@@ -1,0 +1,2116 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Myka Compressores | Proposta Comercial de Locação Kaeser SM 15</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              cyan: '#00e5ff',
+              cyanHover: '#00cbe2',
+              cyanLight: '#e0fbff',
+              cyanDark: '#0097a7',
+              gray: '#4a4d52',
+              dark: '#070b14',
+              surface: '#0d1527',
+              card: '#121d36',
+              border: '#1e2d4d'
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            display: ['"Space Grotesk"', 'sans-serif'],
+          },
+          boxShadow: {
+            'glow-cyan': '0 0 35px -5px rgba(0, 229, 255, 0.35)',
+            'glow-cyan-lg': '0 0 60px -10px rgba(0, 229, 255, 0.45)',
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <style>
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #070b14;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #1e2d4d;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #00e5ff;
+    }
+
+    /* Robust Presentation Deck Snap Scroll */
+    html {
+      scroll-behavior: smooth;
+      scroll-snap-type: y mandatory;
+      scroll-padding-top: 56px;
+      overflow-y: scroll;
+      overflow-x: hidden;
+      height: 100%;
+    }
+
+    body {
+      overflow-x: hidden;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .screen-slide {
+      height: calc(100vh - 56px);
+      height: calc(100dvh - 56px);
+      min-height: calc(100vh - 56px);
+      min-height: calc(100dvh - 56px);
+      max-height: calc(100vh - 56px);
+      max-height: calc(100dvh - 56px);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      scroll-snap-align: start;
+      scroll-snap-stop: always;
+      box-sizing: border-box;
+      position: relative;
+      overflow: hidden;
+      padding: 1.25rem 1rem 1rem 1rem;
+    }
+
+    /* Ambient Tech Grid Background */
+    .bg-grid-pattern {
+      background-size: 40px 40px;
+      background-image: 
+        linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    }
+
+    /* Print Stylesheet for Formal Commercial Proposal */
+    @media print {
+      body {
+        background: #ffffff !important;
+        color: #111827 !important;
+      }
+      .no-print {
+        display: none !important;
+      }
+      .print-only {
+        display: block !important;
+      }
+      .print-card {
+        border: 1px solid #cbd5e1 !important;
+        background: #f8fafc !important;
+        color: #0f172a !important;
+        box-shadow: none !important;
+        break-inside: avoid;
+      }
+      .print-header {
+        border-bottom: 2px solid #00e5ff !important;
+        padding-bottom: 12px;
+        margin-bottom: 20px;
+      }
+      .text-white {
+        color: #0f172a !important;
+      }
+      .text-slate-300, .text-slate-400 {
+        color: #334155 !important;
+      }
+    }
+  </style>
+</head>
+<body class="bg-brand-dark text-slate-100 font-sans antialiased selection:bg-brand-cyan selection:text-brand-dark min-h-screen relative overflow-x-hidden">
+
+  <!-- Ambient Light Effects -->
+  <div class="fixed inset-0 bg-grid-pattern pointer-events-none z-0"></div>
+  <div class="fixed -top-40 left-1/2 -translate-x-1/2 w-[800px] h-[500px] bg-brand-cyan/10 blur-[140px] rounded-full pointer-events-none z-0"></div>
+  <div class="fixed bottom-0 right-0 w-[500px] h-[500px] bg-brand-cyan/5 blur-[160px] rounded-full pointer-events-none z-0"></div>
+
+  <!-- ==================== TOP NAVIGATION BAR ==================== -->
+  <header class="fixed top-0 left-0 right-0 z-50 backdrop-blur-xl bg-brand-dark/95 border-b border-brand-border h-[56px] transition-all duration-300 no-print flex items-center shadow-lg" style="height: 56px;">
+    <div class="max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+      
+      <!-- LOGO -->
+      <a href="#inicio" class="flex items-center gap-3 group">
+        <img src="./.user_uploaded/media_1788137173967.png" alt="MYKA COMPRESSORES" class="h-7 w-auto object-contain transition-all group-hover:scale-105" />
+      </a>
+
+      <!-- NAVIGATION LINKS -->
+      <nav id="topNavLinks" class="hidden lg:flex items-center gap-1 sm:gap-2 text-xs font-semibold text-slate-300">
+        <a href="#contexto" data-section="contexto" class="nav-link px-3 py-1.5 rounded-lg text-slate-300 hover:text-brand-cyan hover:bg-white/5 transition-all">Diagnóstico</a>
+        <a href="#equipamento" data-section="equipamento" class="nav-link px-3 py-1.5 rounded-lg text-slate-300 hover:text-brand-cyan hover:bg-white/5 transition-all">Kaeser SM 15</a>
+        <a href="#full-service" data-section="full-service" class="nav-link px-3 py-1.5 rounded-lg text-slate-300 hover:text-brand-cyan hover:bg-white/5 transition-all">Full Service</a>
+        <a href="#graficos-comparativos" data-section="graficos-comparativos" class="nav-link px-3 py-1.5 rounded-lg text-slate-300 hover:text-brand-cyan hover:bg-white/5 transition-all">Gráficos</a>
+        <a href="#absorcao" data-section="absorcao" class="nav-link px-3 py-1.5 rounded-lg text-slate-300 hover:text-brand-cyan hover:bg-white/5 transition-all">Absorção</a>
+        <a href="#propostas" data-section="propostas" class="nav-link px-3 py-1.5 rounded-lg text-slate-300 hover:text-brand-cyan hover:bg-white/5 transition-all">Planos</a>
+        <a href="#formalizacao" data-section="formalizacao" class="nav-link px-3 py-1.5 rounded-lg text-slate-300 hover:text-brand-cyan hover:bg-white/5 transition-all">Contratação</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ==================== MAIN CONTENT ==================== -->
+  <main class="relative z-10 pt-[56px]">
+
+    <!-- HERO SECTION -->
+    <section id="inicio" class="screen-slide border-b border-brand-border/60">
+      <div class="max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-center h-full pb-2">
+        
+        <div class="text-center max-w-4xl mx-auto">
+          
+          <!-- Logo Display -->
+          <div class="flex justify-center mb-4">
+            <img src="./.user_uploaded/media_1788137173967.png" alt="MYKA COMPRESSORES" class="h-14 sm:h-18 w-auto object-contain drop-shadow-[0_10px_20px_rgba(0,229,255,0.15)]" />
+          </div>
+
+          <h1 class="text-2xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-white font-display mb-3 leading-tight">
+            Solução Flexível<br/>
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-cyan via-teal-300 to-cyan-400">Ar Comprimido de Alta Eficiência</span>
+          </h1>
+
+          <p class="text-sm sm:text-base md:text-lg text-slate-300 leading-relaxed max-w-2xl mx-auto">
+            Uma solução flexível para atender à necessidade de ar comprimido da sua indústria, com diferentes opções de prazo, investimento mensal e a confiabilidade do <strong class="text-white">Kaeser SM 15</strong> com gestão <strong class="text-brand-cyan">Full Service</strong>.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==================== DIAGNÓSTICO SPOT (23K) VS LOCAÇÃO ==================== -->
+    <section id="contexto" class="screen-slide border-b border-brand-border bg-gradient-to-b from-brand-surface/70 to-brand-dark">
+      <div class="max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-between h-full pb-2">
+        
+        <div class="text-center max-w-4xl w-full mx-auto mb-3 shrink-0">
+          <span class="text-[10px] font-mono font-bold text-brand-cyan uppercase tracking-wider">
+            Diagnóstico Operacional & Estratégico
+          </span>
+          <h2 class="text-xl sm:text-2xl font-bold font-display text-white mt-0.5">
+            Custo Spot x Previsibilidade total
+          </h2>
+          <p class="text-slate-400 text-xs sm:text-sm mt-1 max-w-3xl mx-auto leading-relaxed">
+            Entenda o impacto financeiro das intervenções pontuais e por que migrar para a locação Myka.
+          </p>
+        </div>
+
+        <!-- DIAGNOSTIC CARDS GRID -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-6 items-stretch w-full flex-1 mb-1 min-h-0">
+          
+          <!-- CENÁRIO 1: O PROBLEMA DOS SERVIÇOS SPOT (23K INVESTIDOS) -->
+          <div class="bg-gradient-to-br from-red-950/35 via-brand-card to-brand-surface border border-red-500/35 rounded-2xl p-3.5 sm:p-4 flex flex-col justify-between print-card relative overflow-hidden shadow-xl h-full">
+            <div class="absolute -right-8 -bottom-8 w-32 h-32 bg-red-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+            <div class="flex flex-col gap-2">
+              <div class="flex items-center justify-between gap-2">
+                <span class="px-2.5 py-0.5 rounded-lg text-[10px] font-mono font-bold bg-red-900/40 text-red-300 border border-red-500/40 uppercase flex items-center gap-1 shadow-sm">
+                  <i data-lucide="alert-triangle" class="w-3 h-3 text-red-400"></i> Cenário Anterior (Serviços Spot)
+                </span>
+                <span class="text-[10px] font-mono text-red-400 font-bold tracking-tight">Sem Previsibilidade</span>
+              </div>
+
+              <!-- Destaque dos 23k -->
+              <div class="bg-brand-dark/90 border border-red-500/30 rounded-xl p-2.5 shadow-inner flex items-center justify-between">
+                <div>
+                  <div class="text-[9px] text-slate-400 font-mono">Investimento Recente em Serviços Spot:</div>
+                  <div class="text-xl sm:text-2xl font-black text-red-400 font-display tracking-tight">
+                    ~ R$ 23.000,00
+                  </div>
+                </div>
+                <span class="text-[9px] font-mono text-red-300 bg-red-950/80 px-2 py-0.5 rounded border border-red-500/30">
+                  Sem Garantia
+                </span>
+              </div>
+
+              <h3 class="text-xs sm:text-sm font-bold text-white font-display">
+                Por que serviços spot geram instabilidade contínua?
+              </h3>
+
+              <!-- Compact Content List -->
+              <div class="space-y-1.5">
+                <div class="p-2 rounded-lg bg-brand-dark/60 border border-red-500/20 flex items-start gap-2.5">
+                  <i data-lucide="x-circle" class="w-4 h-4 text-red-400 shrink-0 mt-0.5"></i>
+                  <div>
+                    <strong class="text-xs text-white block">Zero Previsibilidade de Caixa</strong>
+                    <p class="text-[11px] text-slate-300 leading-tight">Desembolsos inesperados que desestruturam o fluxo financeiro.</p>
+                  </div>
+                </div>
+
+                <div class="p-2 rounded-lg bg-brand-dark/60 border border-red-500/20 flex items-start gap-2.5">
+                  <i data-lucide="x-circle" class="w-4 h-4 text-red-400 shrink-0 mt-0.5"></i>
+                  <div>
+                    <strong class="text-xs text-white block">Risco de Parada Fabril</strong>
+                    <p class="text-[11px] text-slate-300 leading-tight">Consertos pontuais não eliminam o risco de novas quebras repentinas.</p>
+                  </div>
+                </div>
+
+                <div class="p-2 rounded-lg bg-brand-dark/60 border border-red-500/20 flex items-start gap-2.5">
+                  <i data-lucide="x-circle" class="w-4 h-4 text-red-400 shrink-0 mt-0.5"></i>
+                  <div>
+                    <strong class="text-xs text-white block">Sobrecarga da Equipe Interna</strong>
+                    <p class="text-[11px] text-slate-300 leading-tight">Equipe técnica perde tempo gerindo cotações e reparos emergenciais.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-2 pt-2 border-t border-red-500/20 text-[10px] text-red-300/90 italic">
+              "Serviços spot atendem a urgência, mas mantem incerteza financeira."
+            </div>
+          </div>
+
+
+          <!-- CENÁRIO 2: A SOLUÇÃO VIA LOCAÇÃO FULL SERVICE MYKA -->
+          <div class="bg-gradient-to-br from-teal-950/40 via-brand-card to-brand-surface border-2 border-brand-cyan rounded-2xl p-3.5 sm:p-4 flex flex-col justify-between shadow-glow-cyan print-card relative overflow-hidden h-full">
+            <div class="absolute -right-8 -top-8 w-32 h-32 bg-brand-cyan/15 rounded-full blur-3xl pointer-events-none"></div>
+
+            <div class="flex flex-col gap-2">
+              <div class="flex items-center justify-between gap-2">
+                <span class="px-2.5 py-0.5 rounded-lg text-[10px] font-mono font-bold bg-brand-cyan text-brand-dark uppercase flex items-center gap-1 shadow-sm">
+                  <i data-lucide="shield-check" class="w-3 h-3"></i> Solução Inteligente Myka
+                </span>
+                <span class="text-[10px] font-mono text-brand-cyan font-bold tracking-tight">100% Previsível</span>
+              </div>
+
+              <!-- Destaque da Solução -->
+              <div class="bg-brand-dark/90 border border-brand-cyan/40 rounded-xl p-2.5 shadow-inner flex items-center justify-between">
+                <div>
+                  <div class="text-[9px] text-slate-400 font-mono">Modelo de Gestão Contínua:</div>
+                  <div class="text-xl sm:text-2xl font-black text-brand-cyan font-display tracking-tight">
+                    Full Service & Uptime
+                  </div>
+                </div>
+                <span class="text-[9px] font-mono text-brand-cyan bg-brand-cyan/15 px-2 py-0.5 rounded border border-brand-cyan/40 font-bold">
+                  Risco Zero
+                </span>
+              </div>
+
+              <h3 class="text-xs sm:text-sm font-bold text-white font-display">
+                Transfira a demanda para quem domina o ar comprimido
+              </h3>
+
+              <!-- Compact Content List -->
+              <div class="space-y-1.5">
+                <div class="p-2 rounded-lg bg-brand-dark/60 border border-brand-cyan/30 flex items-start gap-2.5 shadow-sm">
+                  <i data-lucide="check-circle-2" class="w-4 h-4 text-brand-cyan shrink-0 mt-0.5"></i>
+                  <div>
+                    <strong class="text-xs text-white block">Previsibilidade Financeira Total</strong>
+                    <p class="text-[11px] text-slate-200 leading-tight">Mensalidade única e fixa sem nenhum custo extra de peças ou visitas técnicas.</p>
+                  </div>
+                </div>
+
+                <div class="p-2 rounded-lg bg-brand-dark/60 border border-brand-cyan/30 flex items-start gap-2.5 shadow-sm">
+                  <i data-lucide="check-circle-2" class="w-4 h-4 text-brand-cyan shrink-0 mt-0.5"></i>
+                  <div>
+                    <strong class="text-xs text-white block">Máximo Uptime (Kaeser SM 15)</strong>
+                    <p class="text-[11px] text-slate-200 leading-tight">Equipamento novo de alto rendimento com manutenção preventiva rigorosa inclusa.</p>
+                  </div>
+                </div>
+
+                <div class="p-2 rounded-lg bg-brand-dark/60 border border-brand-cyan/30 flex items-start gap-2.5 shadow-sm">
+                  <i data-lucide="check-circle-2" class="w-4 h-4 text-brand-cyan shrink-0 mt-0.5"></i>
+                  <div>
+                    <strong class="text-xs text-white block">Gestão Especializada & Core Business</strong>
+                    <p class="text-[11px] text-slate-200 leading-tight">A Myka assume toda a operação de ar, permitindo foco total na produção da Mettral.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-2 pt-2 border-t border-brand-cyan/20 text-[10px] text-teal-300/90 italic">
+              "Locação Full Service garante previsibilidade total, disponibilidade contínua e risco zero."
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==================== SEÇÃO: BENEFÍCIOS DO COMPRESSOR KAESER SM 15 ==================== -->
+    <section id="equipamento" class="screen-slide border-b border-brand-border">
+      <div class="max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-between h-full pb-1">
+        
+        <div class="text-center max-w-4xl mx-auto mb-1.5 shrink-0">
+          <span class="text-[10px] font-mono font-bold text-brand-cyan uppercase tracking-wider">Tecnologia Premium</span>
+          <h2 class="text-xl sm:text-2xl font-bold font-display text-white mt-0.5">
+            Diferenciais do Compressor Kaeser SM 15
+          </h2>
+          <p class="text-slate-400 text-xs sm:text-sm mt-0.5 whitespace-nowrap">
+            Referência alemã em eficiência energética, alta confiabilidade contínua e baixo nível de ruído.
+          </p>
+        </div>
+
+        <!-- 2-COLUMN LAYOUT: PHOTO + SPECS (LEFT) + 5 COMPACT BENEFITS (RIGHT) -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-3.5 lg:gap-4 items-stretch w-full flex-1 mb-1 min-h-0">
+          
+          <!-- LEFT COLUMN (col-span-6): COMPRESSOR PHOTO + SPECS AO LADO DIREITO DA MÁQUINA -->
+          <div class="lg:col-span-6 bg-gradient-to-b from-[#111c2e] via-[#0d1522] to-[#070b12] border border-cyan-500/30 rounded-2xl p-3 flex flex-col justify-between relative overflow-hidden group shadow-[0_0_40px_rgba(0,229,255,0.08)] hover:shadow-[0_0_50px_rgba(0,229,255,0.2)] transition-all duration-500 h-full">
+            
+            <!-- Ambient Studio Glow -->
+            <div class="absolute -top-24 left-1/4 w-64 h-64 bg-brand-cyan/20 rounded-full blur-3xl pointer-events-none group-hover:bg-brand-cyan/30 transition-all duration-700"></div>
+            <div class="absolute -bottom-16 right-1/4 w-72 h-32 bg-amber-400/15 rounded-full blur-2xl pointer-events-none"></div>
+            
+            <!-- Top Specs Header -->
+            <div class="w-full flex items-center justify-between z-10 px-1 mb-1 shrink-0">
+              <div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-lg bg-amber-400/15 border border-amber-400/30 text-amber-300 text-[10px] font-mono font-bold tracking-wide">
+                <i data-lucide="award" class="w-3.5 h-3.5"></i>
+                <span>ENGENHARIA ALEMÃ</span>
+              </div>
+              <div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-lg bg-brand-cyan/15 border border-brand-cyan/30 text-brand-cyan text-[10px] font-mono font-bold">
+                <span>11 kW / 15 HP</span>
+              </div>
+            </div>
+
+            <!-- Main Showcase: Foto Grande à Esquerda + Informações Técnicas à Direita -->
+            <div class="flex-1 flex items-stretch justify-between gap-3 z-10 min-h-0 py-0.5">
+              
+              <!-- Foto Grande da Máquina (Corpo Inteiro e Base com Pedestal Completo) -->
+              <div class="w-3/5 h-full flex items-center justify-center min-h-0 overflow-hidden">
+                <img src="./.user_uploaded/kaeser_sm15_full_body.jpg" alt="Compressor Kaeser SM 15 Aircenter" class="w-full h-full max-h-[320px] sm:max-h-[350px] object-contain rounded-xl shadow-2xl group-hover:scale-[1.02] transition-transform duration-500" />
+              </div>
+
+              <!-- Informações Técnicas na Vertical ao Lado Direito da Máquina -->
+              <div class="w-2/5 flex flex-col justify-center gap-2 h-full">
+                
+                <!-- Card Pressão -->
+                <div class="bg-brand-dark/90 p-2.5 rounded-xl border border-slate-700/60 shadow-md text-center flex flex-col items-center justify-center">
+                  <div class="text-[9px] font-mono text-slate-400 uppercase flex items-center justify-center gap-1">
+                    <i data-lucide="gauge" class="w-3 h-3 text-slate-400"></i> Pressão
+                  </div>
+                  <div class="text-sm font-bold text-white mt-0.5">7,5 a 15 bar</div>
+                  <span class="text-[9px] text-slate-400">Operação versátil</span>
+                </div>
+
+                <!-- Card Vazão -->
+                <div class="bg-brand-dark/90 p-2.5 rounded-xl border border-brand-cyan/40 shadow-glow-cyan/20 shadow-md text-center flex flex-col items-center justify-center">
+                  <div class="text-[9px] font-mono text-brand-cyan uppercase flex items-center justify-center gap-1 font-semibold">
+                    <i data-lucide="wind" class="w-3 h-3 text-brand-cyan"></i> Vazão
+                  </div>
+                  <div class="text-sm font-bold text-brand-cyan mt-0.5">Até 1,50 m³/min</div>
+                  <span class="text-[9px] text-slate-300">Alta produtividade</span>
+                </div>
+
+                <!-- Card Secador -->
+                <div class="bg-brand-dark/90 p-2.5 rounded-xl border border-slate-700/60 shadow-md text-center flex flex-col items-center justify-center">
+                  <div class="text-[9px] font-mono text-slate-400 uppercase flex items-center justify-center gap-1">
+                    <i data-lucide="droplet-off" class="w-3 h-3 text-slate-400"></i> Secador
+                  </div>
+                  <div class="text-sm font-bold text-white mt-0.5">Integrado</div>
+                  <span class="text-[9px] text-slate-400">Ar seco e tratado</span>
+                </div>
+
+              </div>
+
+            </div>
+
+            <!-- Footer Badge -->
+            <div class="w-full pt-1.5 border-t border-white/10 z-10 text-center shrink-0">
+              <span class="text-[10px] font-mono text-slate-300">Equipamento Seminovo • Linha Kaeser Aircenter</span>
+            </div>
+
+          </div>
+
+          <!-- RIGHT COLUMN (col-span-6): 5 DIFERENCIAIS COMPACTOS E ALINHADOS -->
+          <div class="lg:col-span-6 flex flex-col justify-between gap-1.5 h-full">
+
+            <!-- BENEFIT 1: SIGMA PROFILE -->
+            <div class="bg-brand-card/90 border border-brand-border hover:border-brand-cyan/60 rounded-xl p-2 sm:p-2.5 transition-all flex items-center gap-2.5 print-card">
+              <div class="w-8 h-8 rounded-lg bg-brand-cyan/10 border border-brand-cyan/30 text-brand-cyan flex items-center justify-center shrink-0">
+                <i data-lucide="gauge" class="w-4 h-4"></i>
+              </div>
+              <div class="flex-1">
+                <div class="flex items-center justify-between">
+                  <h4 class="text-xs sm:text-sm font-bold text-white font-display">Perfil SIGMA Profile</h4>
+                  <span class="text-[9px] font-mono text-brand-cyan uppercase font-semibold">Rendimento</span>
+                </div>
+                <p class="text-slate-300 text-[11px] mt-0.5 leading-snug">
+                  Geometria de alta performance: <strong>maior fluxo de ar com menor consumo elétrico</strong>.
+                </p>
+              </div>
+            </div>
+
+            <!-- BENEFIT 2: EFICIÊNCIA ENERGÉTICA SUPERIOR -->
+            <div class="bg-brand-card/90 border border-brand-border hover:border-brand-cyan/60 rounded-xl p-2 sm:p-2.5 transition-all flex items-center gap-2.5 print-card">
+              <div class="w-8 h-8 rounded-lg bg-brand-cyan/10 border border-brand-cyan/30 text-brand-cyan flex items-center justify-center shrink-0">
+                <i data-lucide="zap" class="w-4 h-4"></i>
+              </div>
+              <div class="flex-1">
+                <div class="flex items-center justify-between">
+                  <h4 class="text-xs sm:text-sm font-bold text-white font-display">Eficiência Energética</h4>
+                  <span class="text-[9px] font-mono text-brand-cyan uppercase font-semibold">Economia</span>
+                </div>
+                <p class="text-slate-300 text-[11px] mt-0.5 leading-snug">
+                  Motores elétricos <strong>Premium (IE3/IE4)</strong> para redução contínua de custos de energia.
+                </p>
+              </div>
+            </div>
+
+            <!-- BENEFIT 3: CONTROLADOR SIGMA CONTROL 2 -->
+            <div class="bg-brand-card/90 border border-brand-border hover:border-brand-cyan/60 rounded-xl p-2 sm:p-2.5 transition-all flex items-center gap-2.5 print-card">
+              <div class="w-8 h-8 rounded-lg bg-brand-cyan/10 border border-brand-cyan/30 text-brand-cyan flex items-center justify-center shrink-0">
+                <i data-lucide="activity" class="w-4 h-4"></i>
+              </div>
+              <div class="flex-1">
+                <div class="flex items-center justify-between">
+                  <h4 class="text-xs sm:text-sm font-bold text-white font-display">SIGMA CONTROL 2</h4>
+                  <span class="text-[9px] font-mono text-brand-cyan uppercase font-semibold">Tecnologia 4.0</span>
+                </div>
+                <p class="text-slate-300 text-[11px] mt-0.5 leading-snug">
+                  Monitoramento em tempo real com <strong>alertas de manutenção preventiva</strong> integrados.
+                </p>
+              </div>
+            </div>
+
+            <!-- BENEFIT 4: BAIXO NÍVEL DE RUÍDO -->
+            <div class="bg-brand-card/90 border border-brand-border hover:border-brand-cyan/60 rounded-xl p-2 sm:p-2.5 transition-all flex items-center gap-2.5 print-card">
+              <div class="w-8 h-8 rounded-lg bg-brand-cyan/10 border border-brand-cyan/30 text-brand-cyan flex items-center justify-center shrink-0">
+                <i data-lucide="volume-2" class="w-4 h-4"></i>
+              </div>
+              <div class="flex-1">
+                <div class="flex items-center justify-between">
+                  <h4 class="text-xs sm:text-sm font-bold text-white font-display">Baixo Nível de Ruído</h4>
+                  <span class="text-[9px] font-mono text-brand-cyan uppercase font-semibold">Silencioso</span>
+                </div>
+                <p class="text-slate-300 text-[11px] mt-0.5 leading-snug">
+                  Gabinete superinsonorizado: operação silenciosa <strong>próxima aos operadores</strong>.
+                </p>
+              </div>
+            </div>
+
+            <!-- BENEFIT 5: PROJETO COMPACTO & MANUTENÇÃO SIMPLIFICADA -->
+            <div class="bg-brand-card/90 border border-brand-border hover:border-brand-cyan/60 rounded-xl p-2 sm:p-2.5 transition-all flex items-center gap-2.5 print-card">
+              <div class="w-8 h-8 rounded-lg bg-brand-cyan/10 border border-brand-cyan/30 text-brand-cyan flex items-center justify-center shrink-0">
+                <i data-lucide="wrench" class="w-4 h-4"></i>
+              </div>
+              <div class="flex-1">
+                <div class="flex items-center justify-between">
+                  <h4 class="text-xs sm:text-sm font-bold text-white font-display">Design Compacto & Manutenção</h4>
+                  <span class="text-[9px] font-mono text-brand-cyan uppercase font-semibold">Disponibilidade</span>
+                </div>
+                <p class="text-slate-300 text-[11px] mt-0.5 leading-snug">
+                  Ocupa menos espaço no chão de fábrica e permite trocas ágeis de consumíveis.
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==================== SEÇÃO: ADERÊNCIA AO PLANO FULL SERVICE ==================== -->
+    <section id="full-service" class="screen-slide border-b border-brand-border bg-brand-surface/40">
+      <div class="max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-between h-full pb-2">
+        
+        <div class="text-center max-w-4xl mx-auto mb-3 shrink-0">
+          <span class="text-[10px] font-mono font-bold text-brand-cyan uppercase tracking-wider">Gestão Especializada</span>
+          <h2 class="text-xl sm:text-2xl font-bold font-display text-white mt-0.5">
+            Aderência ao Plano Full Service (Air Delivery)
+          </h2>
+          <p class="text-slate-400 text-xs sm:text-sm mt-0.5 whitespace-nowrap">
+            Vantagens operacionais do fornecimento contínuo de ar comprimido com risco operacional zero.
+          </p>
+        </div>
+
+        <!-- 4 PILLARS OF FULL SERVICE (4 COLUMNS) -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3.5 lg:gap-4 w-full flex-1 mb-1 items-stretch">
+
+          <!-- PILAR 1 -->
+          <div class="bg-brand-card/90 border border-brand-border hover:border-brand-cyan/60 rounded-xl p-4 sm:p-5 flex flex-col justify-between h-full transition-all duration-300 hover:-translate-y-0.5 print-card">
+            <div class="flex-1 flex flex-col">
+              <div class="flex items-center justify-between mb-2">
+                <span class="w-8 h-8 rounded-xl bg-brand-cyan text-brand-dark font-black font-display text-sm flex items-center justify-center shrink-0 shadow-sm">
+                  1
+                </span>
+                <span class="text-[9px] font-mono text-brand-cyan uppercase font-semibold">Previsibilidade</span>
+              </div>
+              <h3 class="text-sm sm:text-base font-bold text-white font-display mb-1.5">
+                Custo Fixo Sem Surpresas
+              </h3>
+              <p class="text-slate-300 text-xs leading-relaxed mb-3">
+                Mensalidade única que cobre 100% da operação, eliminando despesas emergenciais com peças ou técnicos.
+              </p>
+
+              <!-- Animated Center Icon Visual - Expanded Full Area -->
+              <div class="flex-1 min-h-[110px] sm:min-h-[130px] rounded-xl bg-gradient-to-b from-brand-dark/90 to-brand-surface/60 border border-brand-cyan/25 flex flex-col items-center justify-center relative overflow-hidden group shadow-inner">
+                <div class="absolute inset-0 bg-brand-cyan/5 group-hover:bg-brand-cyan/10 transition-all pointer-events-none"></div>
+                <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-brand-cyan/15 border border-brand-cyan/40 text-brand-cyan flex items-center justify-center shadow-glow-cyan animate-pulse">
+                  <i data-lucide="badge-dollar-sign" class="w-9 h-9 sm:w-11 sm:h-11 animate-bounce"></i>
+                </div>
+              </div>
+            </div>
+            <div class="pt-3 border-t border-brand-border/60 mt-3 text-[11px] text-slate-400 font-mono flex items-center justify-between">
+              <span>Fatura 100% previsível</span>
+              <span class="text-brand-cyan font-bold">Sem extras</span>
+            </div>
+          </div>
+
+          <!-- PILAR 2 -->
+          <div class="bg-brand-card/90 border border-brand-border hover:border-brand-cyan/60 rounded-xl p-4 sm:p-5 flex flex-col justify-between h-full transition-all duration-300 hover:-translate-y-0.5 print-card">
+            <div class="flex-1 flex flex-col">
+              <div class="flex items-center justify-between mb-2">
+                <span class="w-8 h-8 rounded-xl bg-brand-cyan text-brand-dark font-black font-display text-sm flex items-center justify-center shrink-0 shadow-sm">
+                  2
+                </span>
+                <span class="text-[9px] font-mono text-brand-cyan uppercase font-semibold">Confiabilidade</span>
+              </div>
+              <h3 class="text-sm sm:text-base font-bold text-white font-display mb-1.5">
+                Máxima Disponibilidade
+              </h3>
+              <p class="text-slate-300 text-xs leading-relaxed mb-3">
+                Manutenções preventivas e corretivas inclusas com foco total em assegurar <strong>zero paradas de fábrica</strong>.
+              </p>
+
+              <!-- Animated Center Icon Visual - Expanded Full Area -->
+              <div class="flex-1 min-h-[110px] sm:min-h-[130px] rounded-xl bg-gradient-to-b from-brand-dark/90 to-brand-surface/60 border border-brand-cyan/25 flex flex-col items-center justify-center relative overflow-hidden group shadow-inner">
+                <div class="absolute inset-0 bg-brand-cyan/5 group-hover:bg-brand-cyan/10 transition-all pointer-events-none"></div>
+                <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-brand-cyan/15 border border-brand-cyan/40 text-brand-cyan flex items-center justify-center shadow-glow-cyan animate-pulse">
+                  <i data-lucide="shield-check" class="w-9 h-9 sm:w-11 sm:h-11 animate-bounce"></i>
+                </div>
+              </div>
+            </div>
+            <div class="pt-3 border-t border-brand-border/60 mt-3 text-[11px] text-slate-400 font-mono flex items-center justify-between">
+              <span>Uptime contínuo</span>
+              <span class="text-brand-cyan font-bold">Zero parada</span>
+            </div>
+          </div>
+
+          <!-- PILAR 3 -->
+          <div class="bg-brand-card/90 border border-brand-border hover:border-brand-cyan/60 rounded-xl p-4 sm:p-5 flex flex-col justify-between h-full transition-all duration-300 hover:-translate-y-0.5 print-card">
+            <div class="flex-1 flex flex-col">
+              <div class="flex items-center justify-between mb-2">
+                <span class="w-8 h-8 rounded-xl bg-brand-cyan text-brand-dark font-black font-display text-sm flex items-center justify-center shrink-0 shadow-sm">
+                  3
+                </span>
+                <span class="text-[9px] font-mono text-brand-cyan uppercase font-semibold">Foco Produtivo</span>
+              </div>
+              <h3 class="text-sm sm:text-base font-bold text-white font-display mb-1.5">
+                Zero Preocupação Técnica
+              </h3>
+              <p class="text-slate-300 text-xs leading-relaxed mb-3">
+                Gestão de peças e revisões 100% com a Myka, liberando sua equipe para o core business.
+              </p>
+
+              <!-- Animated Center Icon Visual - Expanded Full Area -->
+              <div class="flex-1 min-h-[110px] sm:min-h-[130px] rounded-xl bg-gradient-to-b from-brand-dark/90 to-brand-surface/60 border border-brand-cyan/25 flex flex-col items-center justify-center relative overflow-hidden group shadow-inner">
+                <div class="absolute inset-0 bg-brand-cyan/5 group-hover:bg-brand-cyan/10 transition-all pointer-events-none"></div>
+                <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-brand-cyan/15 border border-brand-cyan/40 text-brand-cyan flex items-center justify-center shadow-glow-cyan animate-pulse">
+                  <i data-lucide="wrench" class="w-9 h-9 sm:w-11 sm:h-11 animate-bounce"></i>
+                </div>
+              </div>
+            </div>
+            <div class="pt-3 border-t border-brand-border/60 mt-3 text-[11px] text-slate-400 font-mono flex items-center justify-between">
+              <span>Gestão técnica Myka</span>
+              <span class="text-brand-cyan font-bold">Especialistas</span>
+            </div>
+          </div>
+
+          <!-- PILAR 4 -->
+          <div class="bg-brand-card/90 border border-brand-border hover:border-brand-cyan/60 rounded-xl p-4 sm:p-5 flex flex-col justify-between h-full transition-all duration-300 hover:-translate-y-0.5 print-card">
+            <div class="flex-1 flex flex-col">
+              <div class="flex items-center justify-between mb-2">
+                <span class="w-8 h-8 rounded-xl bg-brand-cyan text-brand-dark font-black font-display text-sm flex items-center justify-center shrink-0 shadow-sm">
+                  4
+                </span>
+                <span class="text-[9px] font-mono text-brand-cyan uppercase font-semibold">Eficiência Fiscal</span>
+              </div>
+              <h3 class="text-sm sm:text-base font-bold text-white font-display mb-1.5">
+                Preservação de Capital
+              </h3>
+              <p class="text-slate-300 text-xs leading-relaxed mb-3">
+                Substituição de CapEx por OpEx, com vantagens contábeis diretas e sem imobilização de recursos.
+              </p>
+
+              <!-- Animated Center Icon Visual - Expanded Full Area -->
+              <div class="flex-1 min-h-[110px] sm:min-h-[130px] rounded-xl bg-gradient-to-b from-brand-dark/90 to-brand-surface/60 border border-brand-cyan/25 flex flex-col items-center justify-center relative overflow-hidden group shadow-inner">
+                <div class="absolute inset-0 bg-brand-cyan/5 group-hover:bg-brand-cyan/10 transition-all pointer-events-none"></div>
+                <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-brand-cyan/15 border border-brand-cyan/40 text-brand-cyan flex items-center justify-center shadow-glow-cyan animate-pulse">
+                  <i data-lucide="trending-up" class="w-9 h-9 sm:w-11 sm:h-11 animate-bounce"></i>
+                </div>
+              </div>
+            </div>
+            <div class="pt-3 border-t border-brand-border/60 mt-3 text-[11px] text-slate-400 font-mono flex items-center justify-between">
+              <span>100% OpEx dedutível</span>
+              <span class="text-brand-cyan font-bold">Sem CapEx</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- FULL SERVICE GUARANTEE BADGE BAR -->
+        <div class="mt-2 p-2.5 rounded-xl bg-gradient-to-r from-teal-950/70 via-brand-dark/90 to-teal-950/70 border border-teal-500/40 flex flex-col sm:flex-row items-center justify-between gap-2 shadow-glow-cyan/10">
+          <div class="flex items-center gap-2.5 text-slate-200 text-xs text-center sm:text-left">
+            <div class="w-7 h-7 rounded-lg bg-teal-500/20 border border-teal-500/40 text-teal-300 flex items-center justify-center shrink-0">
+              <i data-lucide="shield-check" class="w-4 h-4"></i>
+            </div>
+            <span>
+              <strong class="text-teal-300">Garantia Full Service Inclusa:</strong> Peças 100% originais, óleo sintético, técnicos especializados e compressor backup garantido sem custo extra.
+            </span>
+          </div>
+          <span class="px-3 py-1 rounded-full bg-brand-cyan text-brand-dark font-black text-[10px] uppercase tracking-wider shrink-0 font-mono shadow-sm">
+            Risco Zero para a Mettral
+          </span>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==================== GRÁFICOS VISUAIS COMPARATIVOS ==================== -->
+    <section id="graficos-comparativos" class="screen-slide border-b border-brand-border bg-brand-surface/40">
+      <div class="max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-between h-full pb-2">
+        
+        <div class="text-center max-w-4xl mx-auto mb-3 shrink-0">
+          <span class="text-[10px] font-mono font-bold text-brand-cyan uppercase tracking-wider">Visualização Estratégica</span>
+          <h2 class="text-xl sm:text-2xl font-bold font-display text-white mt-0.5">
+            Análise Visual dos Planos e Eficiência Energética
+          </h2>
+          <p class="text-slate-400 text-xs sm:text-sm mt-0.5 whitespace-nowrap">
+            Comparativo de estabilidade financeira, investimentos mensais por prazo e estrutura do TCO.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-3.5 lg:gap-4 items-stretch w-full flex-1 mb-1 min-h-0">
+          
+          <!-- GRÁFICO 1: PREVISIBILIDADE FINANCEIRA (LINHAS: SPOT vs FULL SERVICE) -->
+          <div class="bg-brand-card border border-brand-border hover:border-brand-cyan/50 rounded-xl p-3.5 flex flex-col justify-between shadow-lg print-card transition-all h-full">
+            <div class="flex-1 flex flex-col min-h-0">
+              <div class="flex items-center justify-between gap-1 mb-1">
+                <h3 class="font-bold text-white text-xs sm:text-sm font-display flex items-center gap-1.5">
+                  <i data-lucide="trending-up" class="w-4 h-4 text-brand-cyan"></i>
+                  Previsibilidade Financeira
+                </h3>
+                <span class="text-[9px] font-mono text-slate-400">Picos vs Fixo</span>
+              </div>
+
+              <!-- Clear Header Legend -->
+              <div class="flex items-center gap-3 my-1 text-[10px]">
+                <span class="inline-flex items-center gap-1.5 text-rose-300 font-medium">
+                  <span class="w-2.5 h-1 rounded bg-rose-500"></span> Spot (Picos ~23k)
+                </span>
+                <span class="inline-flex items-center gap-1.5 text-brand-cyan font-medium">
+                  <span class="w-2.5 h-1 rounded bg-brand-cyan border-b border-dashed border-white"></span> Myka (100% Linear)
+                </span>
+              </div>
+              
+              <div class="relative flex-1 w-full mt-1 min-h-[190px] sm:min-h-[210px]">
+                <canvas id="chartFinancialPredictability"></canvas>
+              </div>
+            </div>
+
+            <div class="mt-2.5 pt-2 border-t border-brand-border/60 text-center text-[10px] text-slate-300">
+              <span class="text-rose-400 font-semibold">Sem surpresas:</span> Locação elimina desembolsos emergenciais.
+            </div>
+          </div>
+
+          <!-- GRÁFICO 2: COMPARATIVO DAS MENSALIDADES (BARRAS) -->
+          <div class="bg-brand-card border border-brand-border hover:border-brand-cyan/50 rounded-xl p-3.5 flex flex-col justify-between shadow-lg print-card transition-all h-full">
+            <div class="flex-1 flex flex-col min-h-0">
+              <div class="flex items-center justify-between gap-1 mb-1">
+                <h3 class="font-bold text-white text-xs sm:text-sm font-display flex items-center gap-1.5">
+                  <i data-lucide="bar-chart-2" class="w-4 h-4 text-brand-cyan"></i>
+                  Mensalidades por Prazo
+                </h3>
+                <span class="text-[9px] font-mono text-slate-400">R$ / mês</span>
+              </div>
+
+              <!-- Clear Header Legend -->
+              <div class="flex items-center gap-3 my-1 text-[10px]">
+                <span class="inline-flex items-center gap-1.5 text-slate-300 font-medium">
+                  <span class="w-2.5 h-2.5 rounded-sm bg-slate-400"></span> Sem Absorção
+                </span>
+                <span class="inline-flex items-center gap-1.5 text-brand-cyan font-medium">
+                  <span class="w-2.5 h-2.5 rounded-sm bg-brand-cyan"></span> COM Absorção Atlas GX11
+                </span>
+              </div>
+              
+              <div class="relative flex-1 w-full mt-1 min-h-[190px] sm:min-h-[210px]">
+                <canvas id="chartPlansComparison"></canvas>
+              </div>
+            </div>
+
+            <div class="mt-2.5 pt-2 border-t border-brand-border/60 grid grid-cols-3 gap-1 text-center text-[10px]">
+              <div class="bg-brand-dark/60 p-1.5 rounded border border-brand-border">
+                <div class="text-slate-400 text-[9px]">12 Meses</div>
+                <div class="font-bold text-white text-[11px]">R$ 2.500</div>
+              </div>
+              <div class="bg-brand-dark/60 p-1.5 rounded border border-teal-500/30">
+                <div class="text-teal-300 text-[9px]">36m (c/ Abs.)</div>
+                <div class="font-bold text-teal-300 text-[11px]">R$ 2.180</div>
+              </div>
+              <div class="bg-brand-dark/60 p-1.5 rounded border border-brand-cyan/40">
+                <div class="text-brand-cyan text-[9px]">60m (c/ Abs.)</div>
+                <div class="font-bold text-brand-cyan text-[11px]">R$ 2.000</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 3: COMPOSIÇÃO REAL DOS CUSTOS (ONDE VOCÊ ECONOMIZA) -->
+          <div class="bg-brand-card border border-brand-border hover:border-brand-cyan/50 rounded-xl p-3.5 flex flex-col justify-between shadow-lg print-card transition-all h-full">
+            <div class="flex-1 flex flex-col justify-between min-h-0">
+              <div>
+                <div class="flex items-center justify-between gap-1 mb-1">
+                  <h3 class="font-bold text-white text-xs sm:text-sm font-display flex items-center gap-1.5">
+                    <i data-lucide="zap" class="w-4 h-4 text-brand-cyan"></i>
+                    Onde está o Custo Real?
+                  </h3>
+                  <span class="text-[9px] font-mono text-brand-cyan uppercase font-bold">Ciclo de Vida</span>
+                </div>
+                <p class="text-[11px] text-slate-400 mb-2 leading-tight">
+                  Em compressores, <strong>a energia elétrica é o maior gasto</strong>. O Kaeser SM 15 reduz essa fatura:
+                </p>
+              </div>
+              
+              <!-- VISUAL BREAKDOWN BARS (EXPANDIDO PARA PREENCHER TOTALMENTE A ALTURA) -->
+              <div class="space-y-2 my-auto">
+                
+                <!-- Item 1: Energia Elétrica (78%) -->
+                <div class="p-2.5 rounded-xl bg-brand-cyan/10 border border-brand-cyan/30 shadow-inner">
+                  <div class="flex justify-between items-center text-xs mb-1">
+                    <span class="font-bold text-brand-cyan flex items-center gap-1.5">
+                      <i data-lucide="zap" class="w-4 h-4"></i> Energia Elétrica (O Grande Vilão)
+                    </span>
+                    <span class="font-black text-brand-cyan font-mono text-sm">78%</span>
+                  </div>
+                  <div class="w-full h-2 rounded-full bg-brand-dark/80 overflow-hidden">
+                    <div class="h-full bg-brand-cyan rounded-full" style="width: 78%"></div>
+                  </div>
+                  <span class="text-[10px] text-slate-200 mt-1.5 block leading-snug">
+                    💡 <strong>Impacto Kaeser:</strong> O perfil SIGMA economiza até <strong>15% de energia</strong> (~R$ 500/mês na conta de luz), pagando parte substancial da locação.
+                  </span>
+                </div>
+
+                <!-- Item 2: Manutenção (12%) -->
+                <div class="p-2 rounded-lg bg-teal-950/40 border border-teal-500/20">
+                  <div class="flex justify-between items-center text-[11px] mb-0.5">
+                    <span class="font-semibold text-teal-300 flex items-center gap-1.5">
+                      <i data-lucide="wrench" class="w-3.5 h-3.5"></i> Manutenções & Peças
+                    </span>
+                    <span class="font-bold text-teal-300 font-mono text-xs">12%</span>
+                  </div>
+                  <div class="w-full h-1.5 rounded-full bg-brand-dark/80 overflow-hidden">
+                    <div class="h-full bg-teal-400 rounded-full" style="width: 12%"></div>
+                  </div>
+                  <span class="text-[9px] text-slate-400 mt-1 block">100% coberto pelo Full Service (Custo R$ 0 imprevisto).</span>
+                </div>
+
+                <!-- Item 3: Locação (10%) -->
+                <div class="p-2 rounded-lg bg-brand-dark/60 border border-brand-border">
+                  <div class="flex justify-between items-center text-[11px] mb-0.5">
+                    <span class="font-semibold text-slate-300 flex items-center gap-1.5">
+                      <i data-lucide="calendar" class="w-3.5 h-3.5"></i> Mensalidade da Locação
+                    </span>
+                    <span class="font-bold text-slate-300 font-mono text-xs">10%</span>
+                  </div>
+                  <div class="w-full h-1.5 rounded-full bg-brand-dark/80 overflow-hidden">
+                    <div class="h-full bg-slate-500 rounded-full" style="width: 10%"></div>
+                  </div>
+                  <span class="text-[9px] text-slate-400 mt-1 block">Investimento fixo diluído e dedutível (OpEx).</span>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="mt-2 pt-2 border-t border-brand-border/60 text-center text-[10px] text-slate-300">
+              <strong class="text-brand-cyan">Economia Real:</strong> A eficiência alemã reduz a conta de luz e subsidia sua mensalidade!
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==================== SEÇÃO: ABSORÇÃO ==================== -->
+    <section id="absorcao" class="screen-slide border-b border-brand-border bg-gradient-to-b from-brand-surface/40 to-brand-dark">
+      <div class="max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-between h-full pb-1">
+        
+        <div class="text-center max-w-4xl mx-auto mb-1.5 shrink-0">
+          <span class="text-[10px] font-mono font-bold text-teal-300 uppercase tracking-wider">Oportunidade Comercial Exclusiva</span>
+          <h2 class="text-xl sm:text-2xl font-bold font-display text-white mt-0.5">
+            Valorização & Absorção do seu Atlas GX11
+          </h2>
+          <p class="text-slate-400 text-xs sm:text-sm mt-0.5 whitespace-nowrap">
+            Transforme seu equipamento usado em abatimento direto nas mensalidades da nova locação.
+          </p>
+        </div>
+
+        <!-- MAIN ABSORPTION SHOWCASE: MENTAL MAP / INTERCONNECTED PROCESS FLOW -->
+        <div class="bg-gradient-to-br from-teal-950/40 via-brand-card to-brand-surface border-2 border-teal-500/40 rounded-2xl p-3.5 sm:p-4 relative overflow-hidden print-card shadow-2xl flex-1 flex flex-col justify-between mb-1 min-h-0">
+          
+          <!-- Ambient Glow Effect -->
+          <div class="absolute -right-16 -top-16 w-56 h-56 bg-teal-400/10 rounded-full blur-3xl pointer-events-none"></div>
+          <div class="absolute -left-16 -bottom-16 w-56 h-56 bg-brand-cyan/10 rounded-full blur-3xl pointer-events-none"></div>
+
+          <!-- TOP VALUATION HEADER -->
+          <div class="flex flex-col sm:flex-row items-center justify-between gap-2 p-2.5 rounded-xl bg-brand-dark/90 border border-teal-500/30 shadow-inner">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-xl bg-teal-500/20 border border-teal-500/40 text-teal-300 flex items-center justify-center shrink-0">
+                <i data-lucide="git-merge" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <span class="text-[9px] font-mono uppercase text-teal-300 font-bold block">Fluxo Integrado de Absorção</span>
+                <h3 class="text-sm sm:text-base font-bold text-white font-display">Como o seu Atlas GX11 viabiliza a nova locação</h3>
+              </div>
+            </div>
+
+            <!-- Eligibility Badge -->
+            <div class="flex items-center gap-2 bg-teal-950/80 px-3 py-1.5 rounded-lg border border-teal-500/40 shrink-0">
+              <span class="text-[9px] font-mono text-slate-300">Válido para:</span>
+              <span class="px-2 py-0.5 rounded bg-brand-cyan/20 text-brand-cyan text-xs font-bold font-mono">36 Meses</span>
+              <span class="text-slate-500 text-xs">•</span>
+              <span class="px-2 py-0.5 rounded bg-brand-cyan text-brand-dark text-xs font-black font-mono">60 Meses</span>
+            </div>
+          </div>
+
+          <!-- CONNECTED 3-STEP MIND-MAP DIAGRAM -->
+          <div class="relative grid grid-cols-1 md:grid-cols-3 gap-3 sm:gap-4 my-2 items-stretch">
+            
+            <!-- STEP 1: ENTRADA DO SEU ATIVO -->
+            <div class="p-3.5 rounded-xl bg-brand-dark/70 border border-teal-500/30 flex flex-col justify-between relative group hover:border-teal-400 transition-all shadow-md">
+              <div class="absolute -top-2.5 left-3 px-2 py-0.5 rounded-full bg-slate-800 text-slate-300 border border-slate-700 font-mono text-[9px] font-bold uppercase tracking-wider flex items-center gap-1">
+                <span>01</span> • Entrada do Ativo
+              </div>
+              
+              <div class="pt-1">
+                <div class="w-9 h-9 rounded-lg bg-slate-800 border border-slate-700 text-slate-300 flex items-center justify-center mb-2">
+                  <i data-lucide="package-check" class="w-4 h-4"></i>
+                </div>
+                <h4 class="text-xs sm:text-sm font-bold text-white font-display">Seu Compressor Atlas GX11</h4>
+                <div class="text-lg sm:text-xl font-black text-teal-300 font-display mt-0.5">
+                  Avaliado em R$ 8.000
+                </div>
+                <p class="text-[11px] text-slate-300 mt-1 leading-snug">
+                  A Myka assume o seu equipamento antigo no estado atual, eliminando preocupações com venda ou descarte.
+                </p>
+              </div>
+
+              <div class="mt-2 pt-2 border-t border-slate-700/60 text-[10px] text-slate-400 flex items-center justify-between">
+                <span>Desoneração do ativo</span>
+                <i data-lucide="check" class="w-3.5 h-3.5 text-teal-300"></i>
+              </div>
+            </div>
+
+            <!-- STEP 2: CONVERSÃO EM CRÉDITO MENSAL -->
+            <div class="p-3.5 rounded-xl bg-teal-950/50 border-2 border-teal-500/50 flex flex-col justify-between relative group hover:border-teal-300 transition-all shadow-glow-cyan/20 shadow-lg">
+              <div class="absolute -top-2.5 left-3 px-2 py-0.5 rounded-full bg-teal-500 text-brand-dark font-mono text-[9px] font-black uppercase tracking-wider flex items-center gap-1 shadow-sm">
+                <span>02</span> • Mecanismo Myka
+              </div>
+              
+              <div class="pt-1">
+                <div class="w-9 h-9 rounded-lg bg-teal-500/20 border border-teal-500/40 text-teal-300 flex items-center justify-center mb-2">
+                  <i data-lucide="percent" class="w-4 h-4"></i>
+                </div>
+                <h4 class="text-xs sm:text-sm font-bold text-white font-display">Crédito Comercial Embutido</h4>
+                <div class="text-lg sm:text-xl font-black text-brand-cyan font-display mt-0.5">
+                  Abatimento Mensal
+                </div>
+                <p class="text-[11px] text-slate-200 mt-1 leading-snug">
+                  Os R$ 8.000 são diluídos e <strong>embutidos como desconto contínuo</strong> nas faturas mensais do contrato.
+                </p>
+              </div>
+
+              <div class="mt-2 pt-2 border-t border-teal-500/30 text-[10px] text-teal-300 flex items-center justify-between font-medium">
+                <span>Desconto direto na fatura</span>
+                <i data-lucide="trending-down" class="w-3.5 h-3.5 text-brand-cyan"></i>
+              </div>
+            </div>
+
+            <!-- STEP 3: RESULTADO FINAL NA OPERAÇÃO -->
+            <div class="p-3.5 rounded-xl bg-brand-dark/70 border border-brand-cyan/40 flex flex-col justify-between relative group hover:border-brand-cyan transition-all shadow-md">
+              <div class="absolute -top-2.5 left-3 px-2 py-0.5 rounded-full bg-brand-cyan/20 text-brand-cyan border border-brand-cyan/40 font-mono text-[9px] font-bold uppercase tracking-wider flex items-center gap-1">
+                <span>03</span> • Benefício Final
+              </div>
+              
+              <div class="pt-1">
+                <div class="w-9 h-9 rounded-lg bg-brand-cyan/15 border border-brand-cyan/30 text-brand-cyan flex items-center justify-center mb-2">
+                  <i data-lucide="sparkles" class="w-4 h-4"></i>
+                </div>
+                <h4 class="text-xs sm:text-sm font-bold text-white font-display">Kaeser SM 15 Seminovo</h4>
+                <div class="text-lg sm:text-xl font-black text-white font-display mt-0.5">
+                  A partir de R$ 2.000<span class="text-xs font-normal text-slate-400">/mês</span>
+                </div>
+                <p class="text-[11px] text-slate-300 mt-1 leading-snug">
+                  Sua fábrica ganha ar comprimido de ponta com <strong>Full Service incluso</strong> pagando o menor valor mensal.
+                </p>
+              </div>
+
+              <div class="mt-2 pt-2 border-t border-brand-cyan/30 text-[10px] text-brand-cyan flex items-center justify-between font-bold">
+                <span>60m: R$ 2.000 • 36m: R$ 2.180</span>
+                <i data-lucide="arrow-up-right" class="w-3.5 h-3.5 text-brand-cyan"></i>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- BOTTOM CONNECTED SUMMARY FOOTER -->
+          <div class="p-2.5 rounded-xl bg-brand-surface/90 border border-teal-500/20 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs">
+            <div class="flex items-center gap-2 text-slate-300">
+              <i data-lucide="check-circle-2" class="w-4 h-4 text-brand-cyan shrink-0"></i>
+              <span><strong>Conexão dos Planos:</strong> O crédito de R$ 8.000 é a razão pela qual as propostas de 36m e 60m oferecem as menores mensalidades do mercado.</span>
+            </div>
+            <span class="px-2.5 py-0.5 rounded bg-teal-500/20 border border-teal-500/40 text-teal-300 font-mono font-bold text-[10px] shrink-0">
+              Sem desembolso inicial
+            </span>
+          </div>
+
+        </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==================== SEÇÃO: PLANOS COMERCIAIS ==================== -->
+    <section id="propostas" class="screen-slide border-b border-brand-border">
+      <div class="max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-between h-full pb-1">
+        
+        <div class="text-center max-w-4xl mx-auto mb-1.5 shrink-0">
+          <span class="text-[10px] font-mono font-bold text-brand-cyan uppercase tracking-wider">Matriz Comercial</span>
+          <h2 class="text-xl sm:text-2xl font-bold font-display text-white mt-0.5">
+            Planos de Contrato e Investimento Mensal
+          </h2>
+          <p class="text-slate-400 text-xs sm:text-sm mt-0.5 whitespace-nowrap">
+            Comparativo de prazos contratuais e investimento mensal com absorção do equipamento Atlas GX11.
+          </p>
+        </div>
+
+        <!-- 3 PROPOSAL CARDS GRID -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-3 lg:gap-4 items-stretch w-full flex-1 mb-1 min-h-0">
+          
+          <!-- ==================== PROPOSTA 01 (12 MESES) ==================== -->
+          <div class="bg-brand-card/90 border border-brand-border hover:border-slate-500 rounded-xl p-3 sm:p-3.5 flex flex-col justify-between h-full transition-all duration-300 hover:-translate-y-0.5 print-card relative">
+            <div>
+              <!-- Badge -->
+              <div class="flex items-center justify-between gap-2 mb-1.5">
+                <span class="px-2 py-0.5 rounded-md text-[10px] font-mono font-bold bg-slate-800 text-slate-300 border border-slate-700 uppercase">
+                  Proposta 01
+                </span>
+                <span class="text-xs text-slate-400 font-medium">Prazo: <strong>12 meses</strong></span>
+              </div>
+
+              <h3 class="text-base sm:text-lg font-bold text-white font-display">
+                Contrato 12 Meses
+              </h3>
+              <p class="text-[11px] text-slate-400 mt-0.5 mb-2">
+                Maior flexibilidade com menor compromisso.
+              </p>
+
+              <!-- Option 1: Valor Padrão -->
+              <div class="p-2.5 rounded-xl bg-slate-800/50 border border-slate-700 mb-2">
+                <div class="flex items-center justify-between mb-0.5">
+                  <span class="text-[9px] font-bold uppercase font-mono text-slate-300">
+                    Investimento Mensal
+                  </span>
+                  <span class="text-[9px] bg-slate-700 text-slate-300 font-bold px-1.5 py-0.5 rounded">
+                    12 meses
+                  </span>
+                </div>
+                <div class="flex items-baseline gap-1 mt-0.5">
+                  <span class="text-xs font-bold text-slate-300">R$</span>
+                  <span class="text-xl sm:text-2xl font-black text-white font-display tracking-tight">2.500<span class="text-sm">,00</span></span>
+                  <span class="text-slate-400 text-xs">/ mês</span>
+                </div>
+              </div>
+
+              <!-- Option 2: Condição -->
+              <div class="p-2 rounded-xl bg-brand-dark/60 border border-brand-border mb-2">
+                <div class="text-[9px] font-mono text-slate-400 uppercase font-semibold">Absorção Atlas GX11</div>
+                <div class="text-[11px] font-semibold text-slate-400 mt-0.5">
+                  Não aplicável para 12 meses
+                </div>
+              </div>
+
+              <div class="p-2 rounded-lg bg-brand-surface/70 border border-brand-border text-[11px] text-slate-300 leading-snug">
+                <strong class="text-slate-200">Destaque:</strong> Kaeser SM 15 Full Service com vigência reduzida.
+              </div>
+            </div>
+
+            <!-- Conditions List -->
+            <div class="space-y-1 text-[11px] text-slate-300 pt-2 border-t border-brand-border/60 mt-2">
+              <div class="flex items-start gap-1.5">
+                <i data-lucide="check" class="w-3.5 h-3.5 text-brand-cyan shrink-0 mt-0.5"></i>
+                <span>Locação <strong>Kaeser SM 15</strong></span>
+              </div>
+              <div class="flex items-start gap-1.5">
+                <i data-lucide="check" class="w-3.5 h-3.5 text-brand-cyan shrink-0 mt-0.5"></i>
+                <span>Manutenção Full Service inclusa</span>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- ==================== PROPOSTA 02 (36 MESES) ==================== -->
+          <div class="bg-brand-card/90 border border-brand-border hover:border-brand-cyan/50 rounded-xl p-3 sm:p-3.5 flex flex-col justify-between h-full transition-all duration-300 hover:-translate-y-0.5 print-card relative">
+            <div>
+              <!-- Badge -->
+              <div class="flex items-center justify-between gap-2 mb-1.5">
+                <span class="px-2 py-0.5 rounded-md text-[10px] font-mono font-bold bg-brand-cyan/15 text-brand-cyan border border-brand-cyan/30 uppercase">
+                  Proposta 02
+                </span>
+                <span class="text-xs text-brand-cyan font-medium">Prazo: <strong>36 meses</strong></span>
+              </div>
+
+              <h3 class="text-base sm:text-lg font-bold text-white font-display">
+                Contrato 36 Meses
+              </h3>
+              <p class="text-[11px] text-slate-400 mt-0.5 mb-2">
+                Equilíbrio de prazo e custo mensal.
+              </p>
+
+              <!-- Option 1: Com Absorção (Destaque) -->
+              <div class="p-2.5 rounded-xl bg-teal-950/40 border border-teal-500/40 mb-2 relative overflow-hidden">
+                <div class="flex items-center justify-between mb-0.5">
+                  <span class="text-[9px] font-bold uppercase font-mono text-teal-300 flex items-center gap-1">
+                    <i data-lucide="sparkles" class="w-3 h-3"></i> COM Absorção
+                  </span>
+                  <span class="text-[9px] bg-teal-500/20 text-teal-300 font-bold px-1.5 py-0.5 rounded">
+                    - R$ 200/mês
+                  </span>
+                </div>
+                <div class="flex items-baseline gap-1 mt-0.5">
+                  <span class="text-xs font-bold text-slate-300">R$</span>
+                  <span class="text-xl sm:text-2xl font-black text-teal-300 font-display">2.180<span class="text-sm">,00</span></span>
+                  <span class="text-slate-400 text-xs">/ mês</span>
+                </div>
+              </div>
+
+              <!-- Option 2: Sem Absorção -->
+              <div class="p-2 rounded-xl bg-brand-dark/60 border border-brand-border mb-2">
+                <div class="text-[9px] font-mono text-slate-400 uppercase font-semibold">Sem Absorção do Equipamento</div>
+                <div class="flex items-baseline gap-1 mt-0.5">
+                  <span class="text-xs font-bold text-slate-300">R$ </span>
+                  <span class="text-sm font-extrabold text-white font-display">2.380,00</span>
+                  <span class="text-slate-400 text-xs">/ mês</span>
+                </div>
+              </div>
+
+              <div class="p-2 rounded-lg bg-brand-surface/70 border border-brand-border text-[11px] text-slate-300 leading-snug">
+                <strong class="text-brand-cyan">Destaque:</strong> Redução direta de R$ 200/mês com o Atlas GX11.
+              </div>
+            </div>
+
+            <!-- Conditions List -->
+            <div class="space-y-1 text-[11px] text-slate-300 pt-2 border-t border-brand-border/60 mt-2">
+              <div class="flex items-start gap-1.5">
+                <i data-lucide="check" class="w-3.5 h-3.5 text-brand-cyan shrink-0 mt-0.5"></i>
+                <span>Locação <strong>Kaeser SM 15</strong></span>
+              </div>
+              <div class="flex items-start gap-1.5">
+                <i data-lucide="check" class="w-3.5 h-3.5 text-brand-cyan shrink-0 mt-0.5"></i>
+                <span>Manutenção Full Service inclusa</span>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- ==================== PROPOSTA 03 (60 MESES) - HERO RECOMENDADO ==================== -->
+          <div class="bg-gradient-to-b from-brand-card via-brand-surface to-brand-card border-2 border-brand-cyan rounded-xl p-3 sm:p-3.5 flex flex-col justify-between h-full relative shadow-glow-cyan transition-all duration-300 hover:-translate-y-0.5 print-card">
+            
+            <!-- Recommended Ribbon -->
+            <div class="absolute -top-2.5 left-1/2 -translate-x-1/2 bg-gradient-to-r from-brand-cyan to-teal-400 text-brand-dark font-black text-[9px] uppercase tracking-wider px-3 py-0.5 rounded-full shadow-md flex items-center gap-1">
+              <i data-lucide="star" class="w-2.5 h-2.5 fill-current"></i>
+              Menor Mensalidade
+            </div>
+
+            <div>
+              <!-- Badge -->
+              <div class="flex items-center justify-between gap-2 mb-1.5 mt-0.5">
+                <span class="px-2 py-0.5 rounded-md text-[10px] font-mono font-bold bg-brand-cyan text-brand-dark uppercase">
+                  Proposta 03
+                </span>
+                <span class="text-xs text-brand-cyan font-bold">Prazo: <strong>60 meses</strong></span>
+              </div>
+
+              <h3 class="text-base sm:text-lg font-bold text-white font-display">
+                Contrato 60 Meses
+              </h3>
+              <p class="text-[11px] text-slate-300 mt-0.5 mb-2">
+                Maior economia e previsibilidade de longo prazo.
+              </p>
+
+              <!-- Option 1: Com Absorção (Melhor Preço) -->
+              <div class="p-2.5 rounded-xl bg-teal-950/60 border-2 border-brand-cyan mb-2 relative overflow-hidden shadow-inner">
+                <div class="flex items-center justify-between mb-0.5">
+                  <span class="text-[9px] font-bold uppercase font-mono text-brand-cyan flex items-center gap-1">
+                    <i data-lucide="check-check" class="w-3 h-3"></i> COM Absorção
+                  </span>
+                  <span class="text-[9px] bg-brand-cyan text-brand-dark font-black px-1.5 py-0.5 rounded">
+                    MELHOR VALOR
+                  </span>
+                </div>
+                <div class="flex items-baseline gap-1 mt-0.5">
+                  <span class="text-xs font-bold text-slate-300">R$</span>
+                  <span class="text-xl sm:text-2xl font-black text-brand-cyan font-display">2.000<span class="text-sm">,00</span></span>
+                  <span class="text-slate-300 text-xs">/ mês</span>
+                </div>
+              </div>
+
+              <!-- Option 2: Sem Absorção -->
+              <div class="p-2 rounded-xl bg-brand-dark/60 border border-brand-border mb-2">
+                <div class="text-[9px] font-mono text-slate-400 uppercase font-semibold">Sem Absorção do Equipamento</div>
+                <div class="flex items-baseline gap-1 mt-0.5">
+                  <span class="text-xs font-bold text-slate-300">R$ </span>
+                  <span class="text-sm font-extrabold text-white font-display">2.100,00</span>
+                  <span class="text-slate-400 text-xs">/ mês</span>
+                </div>
+              </div>
+
+              <div class="p-2 rounded-lg bg-brand-surface/70 border border-brand-border text-[11px] text-slate-300 leading-snug">
+                <strong class="text-brand-cyan">Destaque:</strong> Menor custo mensal fixo garantido da proposta.
+              </div>
+            </div>
+
+            <!-- Conditions List -->
+            <div class="space-y-1 text-[11px] text-slate-300 pt-2 border-t border-brand-border/60 mt-2">
+              <div class="flex items-start gap-1.5">
+                <i data-lucide="check" class="w-3.5 h-3.5 text-brand-cyan shrink-0 mt-0.5"></i>
+                <span>Locação <strong>Kaeser SM 15</strong></span>
+              </div>
+              <div class="flex items-start gap-1.5">
+                <i data-lucide="check" class="w-3.5 h-3.5 text-brand-cyan shrink-0 mt-0.5"></i>
+                <span>Manutenção Full Service inclusa</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==================== FORMALIZAÇÃO DO CONTRATO E ETAPAS ==================== -->
+    <section id="formalizacao" class="screen-slide border-b border-brand-border">
+      <div class="max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-between h-full pb-2">
+        
+        <div class="text-center max-w-4xl mx-auto mb-3 shrink-0">
+          <span class="text-[10px] font-mono font-bold text-brand-cyan uppercase tracking-wider">Próximos Passos</span>
+          <h2 class="text-xl sm:text-2xl font-bold font-display text-white mt-0.5">
+            Formalização e Implantação
+          </h2>
+          <p class="text-slate-400 text-xs sm:text-sm mt-0.5 whitespace-nowrap">
+            Fluxo simplificado de contratação com entrega técnica e fornecimento de ar comprimido garantido.
+          </p>
+        </div>
+
+        <!-- 3-COLUMN STEPS CARDS GRID -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-6 items-stretch w-full flex-1 mb-1">
+          
+          <!-- ETAPA 01 -->
+          <div class="bg-brand-card/90 border border-brand-border hover:border-brand-cyan/60 rounded-2xl p-5 flex flex-col justify-between h-full transition-all duration-300 hover:-translate-y-0.5 print-card relative group shadow-lg">
+            <div class="flex-1 flex flex-col">
+              <div class="flex items-center justify-between mb-3">
+                <span class="px-3 py-1 rounded-lg text-xs font-mono font-bold bg-brand-cyan/15 text-brand-cyan border border-brand-cyan/30 uppercase">
+                  Etapa 01
+                </span>
+                <span class="text-[10px] font-mono text-slate-400">Passo Inicial</span>
+              </div>
+
+              <h3 class="text-base sm:text-lg font-bold text-white font-display mb-2">
+                Escolha do Plano
+              </h3>
+              
+              <p class="text-slate-300 text-xs sm:text-sm leading-relaxed mb-4">
+                Definição do prazo ideal (12, 36 ou 60 meses) com a opção de absorção do equipamento Atlas GX11 para desconto imediato na mensalidade.
+              </p>
+
+              <!-- Central Icon Visual -->
+              <div class="flex-1 min-h-[90px] rounded-xl bg-gradient-to-b from-brand-dark/90 to-brand-surface/60 border border-brand-cyan/25 flex items-center justify-center relative overflow-hidden group shadow-inner">
+                <div class="w-14 h-14 rounded-2xl bg-brand-cyan/15 border border-brand-cyan/40 text-brand-cyan flex items-center justify-center shadow-glow-cyan animate-pulse">
+                  <i data-lucide="check-circle-2" class="w-7 h-7"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="pt-3 border-t border-brand-border/60 mt-3 text-xs text-slate-300 flex items-center justify-between">
+              <span class="font-medium">Definição comercial</span>
+              <span class="text-brand-cyan font-bold font-mono">12, 36 ou 60m</span>
+            </div>
+          </div>
+
+          <!-- ETAPA 02 -->
+          <div class="bg-brand-card/90 border border-brand-border hover:border-brand-cyan/60 rounded-2xl p-5 flex flex-col justify-between h-full transition-all duration-300 hover:-translate-y-0.5 print-card relative group shadow-lg">
+            <div class="flex-1 flex flex-col">
+              <div class="flex items-center justify-between mb-3">
+                <span class="px-3 py-1 rounded-lg text-xs font-mono font-bold bg-brand-cyan/15 text-brand-cyan border border-brand-cyan/30 uppercase">
+                  Etapa 02
+                </span>
+                <span class="text-[10px] font-mono text-slate-400">100% Digital</span>
+              </div>
+
+              <h3 class="text-base sm:text-lg font-bold text-white font-display mb-2">
+                Emissão Contratual
+              </h3>
+              
+              <p class="text-slate-300 text-xs sm:text-sm leading-relaxed mb-4">
+                Elaboração ágil da minuta contratual e envio para assinatura eletrônica segura, sem burocracia e com total transparência jurídica.
+              </p>
+
+              <!-- Central Icon Visual -->
+              <div class="flex-1 min-h-[90px] rounded-xl bg-gradient-to-b from-brand-dark/90 to-brand-surface/60 border border-brand-cyan/25 flex items-center justify-center relative overflow-hidden group shadow-inner">
+                <div class="w-14 h-14 rounded-2xl bg-brand-cyan/15 border border-brand-cyan/40 text-brand-cyan flex items-center justify-center shadow-glow-cyan animate-pulse">
+                  <i data-lucide="file-signature" class="w-7 h-7"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="pt-3 border-t border-brand-border/60 mt-3 text-xs text-slate-300 flex items-center justify-between">
+              <span class="font-medium">Assinatura eletrônica</span>
+              <span class="text-brand-cyan font-bold font-mono">Rápido & Seguro</span>
+            </div>
+          </div>
+
+          <!-- ETAPA 03 -->
+          <div class="bg-gradient-to-b from-brand-card via-brand-surface to-brand-card border-2 border-brand-cyan rounded-2xl p-5 flex flex-col justify-between h-full transition-all duration-300 hover:-translate-y-0.5 print-card relative group shadow-glow-cyan">
+            <div class="flex-1 flex flex-col">
+              <div class="flex items-center justify-between mb-3">
+                <span class="px-3 py-1 rounded-lg text-xs font-mono font-bold bg-brand-cyan text-brand-dark uppercase">
+                  Etapa 03
+                </span>
+                <span class="text-[10px] font-mono text-teal-300 font-bold">Pronta Entrega</span>
+              </div>
+
+              <h3 class="text-base sm:text-lg font-bold text-white font-display mb-1.5">
+                Entrega & Instalação Imediata
+              </h3>
+              
+              <p class="text-slate-200 text-xs sm:text-sm leading-relaxed mb-3">
+                Após a assinatura do contrato, realizamos a <strong>entrega e instalação técnica imediata</strong> do compressor Kaeser SM 15, com start-up e fornecimento contínuo de ar garantido.
+              </p>
+
+              <!-- Central Icon Visual -->
+              <div class="flex-1 min-h-[85px] rounded-xl bg-gradient-to-b from-brand-dark/90 to-teal-950/40 border border-brand-cyan/40 flex items-center justify-center relative overflow-hidden group shadow-inner">
+                <div class="w-14 h-14 rounded-2xl bg-gradient-to-r from-brand-cyan to-teal-400 text-brand-dark flex items-center justify-center shadow-glow-cyan animate-pulse">
+                  <i data-lucide="zap" class="w-7 h-7"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="pt-3 border-t border-brand-border/60 mt-3 text-xs text-slate-200 flex items-center justify-between">
+              <span class="font-medium">Prazo de instalação</span>
+              <span class="text-brand-cyan font-bold font-mono">Imediato / Pronta Entrega</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="border-t border-brand-border bg-brand-dark py-12 relative z-10 no-print">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+      
+      <!-- LOGO FOOTER -->
+      <div class="flex items-center gap-3">
+        <img src="./.user_uploaded/media_1788137173967.png" alt="MYKA COMPRESSORES" class="h-6 w-auto object-contain" />
+        <div class="text-xs text-slate-400">
+          Soluções Especializadas em Ar Comprimido • Locação Full Service & Manutenção
+        </div>
+      </div>
+
+      <div class="text-xs text-slate-500 text-center md:text-right">
+        Proposta Comercial Confidencial • Myka Compressores
+      </div>
+
+    </div>
+  </footer>
+
+
+  <!-- ==================== INTERACTIVE SLIDE DECK MODAL ==================== -->
+  <div id="slideDeckModal" class="fixed inset-0 bg-brand-dark/95 backdrop-blur-2xl z-[100] hidden flex flex-col no-print transition-opacity duration-300">
+    
+    <!-- SLIDE TOP BAR -->
+    <div class="h-16 border-b border-brand-border px-6 flex items-center justify-between shrink-0">
+      <div class="flex items-center gap-3">
+        <img src="./.user_uploaded/media_1788137173967.png" alt="MYKA COMPRESSORES" class="h-6 w-auto object-contain" />
+      </div>
+
+      <!-- Slide Counter & Controls -->
+      <div class="flex items-center gap-4">
+        <div class="text-xs font-mono text-brand-cyan bg-brand-surface px-3 py-1 rounded-md border border-brand-border">
+          Slide <span id="currentSlideNum">1</span> de <span id="totalSlidesNum">7</span>
+        </div>
+        <button onclick="toggleSlideDeck(false)" class="p-2 rounded-lg bg-brand-surface hover:bg-slate-800 text-slate-300 hover:text-white transition-colors">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- SLIDE VIEW CONTAINER -->
+    <div class="flex-1 flex items-center justify-center p-4 sm:p-8 lg:p-12 overflow-y-auto">
+      <div id="slideContent" class="max-w-4xl w-full">
+
+        <!-- SLIDE 1: CAPA -->
+        <div class="slide-item block space-y-6 text-center">
+          <div class="flex justify-center">
+            <div class="bg-white/95 px-6 py-2.5 rounded-2xl shadow-xl inline-block">
+              <img src="./.user_uploaded/media_1787765292537.jpg" alt="MYKA COMPRESSORES" class="h-12 w-auto object-contain" />
+            </div>
+          </div>
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-cyan/10 border border-brand-cyan/30 text-brand-cyan text-xs font-semibold">
+            PROPOSTA COMERCIAL DE LOCAÇÃO DE COMPRESSOR
+          </div>
+          <h2 class="text-3xl sm:text-5xl font-black font-display text-white">
+            Solução Flexível de Ar Comprimido
+          </h2>
+          <div class="text-xl sm:text-2xl text-brand-cyan font-bold">
+            Kaeser SM 15 • Opções de 12, 36 e 60 Meses
+          </div>
+          <p class="text-slate-300 text-base max-w-2xl mx-auto leading-relaxed">
+            Diferentes opções de prazo e investimento mensal, com possibilidade de absorção do seu compressor Atlas GX11 e gestão Full Service.
+          </p>
+          <div class="pt-6">
+            <button onclick="nextSlide()" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-brand-cyan text-brand-dark font-bold text-sm shadow-glow-cyan">
+              <span>Iniciar Apresentação</span>
+              <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- SLIDE 2: CONTEXTO SPOT (23K) VS PREVISIBILIDADE NA LOCAÇÃO -->
+        <div class="slide-item hidden space-y-6">
+          <div class="text-xs font-mono font-bold text-amber-400 uppercase flex items-center gap-1.5">
+            <i data-lucide="bar-chart-3" class="w-3.5 h-3.5"></i> Diagnóstico Operacional
+          </div>
+          <h2 class="text-2xl sm:text-3xl font-bold font-display text-white">
+            Custo Spot vs. Previsibilidade na Locação
+          </h2>
+          
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs">
+            <!-- Spot -->
+            <div class="bg-red-950/20 border border-red-500/40 p-4 rounded-xl">
+              <span class="font-mono text-red-400 font-bold uppercase">Cenário Spot Recente</span>
+              <div class="text-xl font-black text-red-400 my-1">~ R$ 23.000,00 gastos</div>
+              <p class="text-slate-300 mt-2 leading-relaxed">
+                Serviços spot atendem a urgências momentâneas, mas <strong>não possuem previsibilidade orçamentária</strong> e mantêm o risco constante de novas quebras e custos surpresa.
+              </p>
+            </div>
+
+            <!-- Locação -->
+            <div class="bg-teal-950/30 border border-brand-cyan p-4 rounded-xl">
+              <span class="font-mono text-brand-cyan font-bold uppercase">Solução na Locação Myka</span>
+              <div class="text-xl font-black text-brand-cyan my-1">Previsibilidade Total</div>
+              <p class="text-slate-200 mt-2 leading-relaxed">
+                Na locação, você garante <strong>mensalidade fixa e sem surpresas</strong> e transfere toda a responsabilidade e risco técnico para <strong>quem realmente entende e domina essa demanda</strong>.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- SLIDE 3: AS 3 PROPOSTAS -->
+        <div class="slide-item hidden space-y-6">
+          <div class="text-xs font-mono font-bold text-brand-cyan uppercase">Matriz de Propostas</div>
+          <h2 class="text-2xl sm:text-3xl font-bold font-display text-white">
+            Opções de Contrato e Mensalidade
+          </h2>
+          
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs">
+            <!-- P1 -->
+            <div class="bg-brand-surface border border-brand-border p-4 rounded-xl">
+              <span class="font-mono text-slate-400 font-bold">PROPOSTA 01</span>
+              <div class="text-base font-bold text-white mt-1">12 Meses</div>
+              <div class="text-2xl font-black text-white font-display my-2">R$ 2.500<span class="text-sm">,00</span><span class="text-[10px] text-slate-400">/mês</span></div>
+              <div class="mt-3 pt-2 border-t border-brand-border text-[11px] text-slate-300">Maior flexibilidade contratual.</div>
+            </div>
+
+            <!-- P2 -->
+            <div class="bg-brand-surface border border-brand-cyan/40 p-4 rounded-xl">
+              <span class="font-mono text-brand-cyan font-bold">PROPOSTA 02</span>
+              <div class="text-base font-bold text-white mt-1">36 Meses</div>
+              <div class="text-2xl font-black text-teal-300 font-display my-2">R$ 2.180<span class="text-sm">,00</span><span class="text-[10px] text-slate-400">/mês</span></div>
+              <div class="text-[11px] text-teal-400 font-semibold">COM Absorção Atlas GX11</div>
+              <div class="text-slate-400 mt-0.5">Sem absorção: R$ 2.380,00 / mês</div>
+              <div class="mt-2 pt-2 border-t border-brand-border text-[11px] text-slate-300">Equilíbrio de prazo e custo.</div>
+            </div>
+
+            <!-- P3 -->
+            <div class="bg-brand-surface border-2 border-brand-cyan p-4 rounded-xl shadow-glow-cyan">
+              <span class="font-mono text-brand-cyan font-bold">PROPOSTA 03 (Destaque)</span>
+              <div class="text-base font-bold text-white mt-1">60 Meses</div>
+              <div class="text-2xl font-black text-brand-cyan font-display my-2">R$ 2.000<span class="text-sm">,00</span><span class="text-[10px] text-slate-400">/mês</span></div>
+              <div class="text-[11px] text-brand-cyan font-bold">COM Absorção Atlas GX11</div>
+              <div class="text-slate-400 mt-0.5">Sem absorção: R$ 2.100,00 / mês</div>
+              <div class="mt-2 pt-2 border-t border-brand-border text-[11px] text-slate-300">Menor valor mensal garantido.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SLIDE 4: ABSORÇÃO ATLAS GX11 -->
+        <div class="slide-item hidden space-y-6">
+          <div class="text-xs font-mono font-bold text-brand-cyan uppercase">Condição Comercial Diferenciada</div>
+          <h2 class="text-2xl sm:text-3xl font-bold font-display text-white">
+            Absorção do Compressor Atlas GX11
+          </h2>
+          
+          <div class="bg-brand-surface border border-teal-500/40 rounded-2xl p-6 space-y-4">
+            <div class="flex items-center justify-between">
+              <div>
+                <h4 class="text-lg font-bold text-white">Desconto direto na mensalidade</h4>
+                <p class="text-xs text-slate-300 mt-1">Aplicável nos contratos ao absorvermos seu Atlas GX11.</p>
+              </div>
+              <div class="text-2xl font-black text-teal-300 font-display bg-teal-950/60 px-4 py-2 rounded-xl border border-teal-500/30">
+                Condição Especial
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 text-xs">
+              <div class="bg-brand-dark/80 p-3 rounded-lg border border-brand-border">
+                <strong class="text-white">Na Proposta de 36 Meses:</strong>
+                <div class="text-teal-300 font-bold mt-1">Mensalidade: R$ 2.180,00 / mês</div>
+                <div class="text-slate-400 text-[11px]">Sem absorção: R$ 2.380,00 / mês</div>
+              </div>
+
+              <div class="bg-brand-dark/80 p-3 rounded-lg border border-brand-border">
+                <strong class="text-white">Na Proposta de 60 Meses:</strong>
+                <div class="text-brand-cyan font-bold mt-1">Mensalidade: R$ 2.000,00 / mês</div>
+                <div class="text-slate-400 text-[11px]">Sem absorção: R$ 2.100,00 / mês</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SLIDE 5: BENEFÍCIOS DO KAESER SM 15 -->
+        <div class="slide-item hidden space-y-6">
+          <div class="text-xs font-mono font-bold text-brand-cyan uppercase">Tecnologia Premium Kaeser</div>
+          <h2 class="text-2xl sm:text-3xl font-bold font-display text-white">
+            Diferenciais do Compressor Kaeser SM 15
+          </h2>
+          
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div class="bg-brand-surface border border-brand-border p-4 rounded-xl">
+              <div class="flex items-center gap-2 text-brand-cyan font-bold text-sm mb-1">
+                <i data-lucide="gauge" class="w-4 h-4"></i> Perfil SIGMA Profile
+              </div>
+              <p class="text-xs text-slate-300">Geometria de alto rendimento que gera maior fluxo de ar com menor consumo de energia.</p>
+            </div>
+
+            <div class="bg-brand-surface border border-brand-border p-4 rounded-xl">
+              <div class="flex items-center gap-2 text-brand-cyan font-bold text-sm mb-1">
+                <i data-lucide="zap" class="w-4 h-4"></i> Eficiência Energética Superior
+              </div>
+              <p class="text-xs text-slate-300">Motores de alta eficiência (IE3/IE4) para redução contínua dos custos da fábrica.</p>
+            </div>
+
+            <div class="bg-brand-surface border border-brand-border p-4 rounded-xl">
+              <div class="flex items-center gap-2 text-brand-cyan font-bold text-sm mb-1">
+                <i data-lucide="activity" class="w-4 h-4"></i> SIGMA CONTROL 2
+              </div>
+              <p class="text-xs text-slate-300">Monitoramento em tempo real, alertas preventivos e integração com redes industriais.</p>
+            </div>
+
+            <div class="bg-brand-surface border border-brand-border p-4 rounded-xl">
+              <div class="flex items-center gap-2 text-brand-cyan font-bold text-sm mb-1">
+                <i data-lucide="volume-x" class="w-4 h-4"></i> Baixo Nível de Ruído & Compacto
+              </div>
+              <p class="text-xs text-slate-300">Isolamento acústico projetado para instalação próxima ao local de trabalho.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- SLIDE 6: ADERÊNCIA AO FULL SERVICE -->
+        <div class="slide-item hidden space-y-6">
+          <div class="text-xs font-mono font-bold text-brand-cyan uppercase">Gestão Full Service</div>
+          <h2 class="text-2xl sm:text-3xl font-bold font-display text-white">
+            Vantagens do Plano Air Delivery
+          </h2>
+          
+          <div class="space-y-3 text-sm">
+            <div class="flex items-start gap-3 bg-brand-surface border border-brand-border p-3.5 rounded-xl">
+              <span class="w-6 h-6 rounded-md bg-brand-cyan text-brand-dark font-bold text-xs flex items-center justify-center shrink-0">1</span>
+              <div>
+                <strong class="text-white">Custo Fixo Sem Surpresas:</strong> Mensalidade única cobrindo toda a operação, eliminando custos com peças ou reparos.
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3 bg-brand-surface border border-brand-border p-3.5 rounded-xl">
+              <span class="w-6 h-6 rounded-md bg-brand-cyan text-brand-dark font-bold text-xs flex items-center justify-center shrink-0">2</span>
+              <div>
+                <strong class="text-white">Disponibilidade Garantida:</strong> Manutenções preventivas e corretivas executadas por técnicos especializados (máximo uptime).
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3 bg-brand-surface border border-brand-border p-3.5 rounded-xl">
+              <span class="w-6 h-6 rounded-md bg-brand-cyan text-brand-dark font-bold text-xs flex items-center justify-center shrink-0">3</span>
+              <div>
+                <strong class="text-white">Zero Preocupação com Ativo:</strong> Gestão de peças, revisões periódicas e conservação 100% sob responsabilidade da Myka.
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3 bg-brand-surface border border-brand-border p-3.5 rounded-xl">
+              <span class="w-6 h-6 rounded-md bg-brand-cyan text-brand-dark font-bold text-xs flex items-center justify-center shrink-0">4</span>
+              <div>
+                <strong class="text-white">Preservação de Capital:</strong> Elimina grandes investimentos de capital (CapEx), direcionando orçamento para o core business (OpEx).
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SLIDE 7: FORMALIZAÇÃO -->
+        <div class="slide-item hidden space-y-6 text-center">
+          <div class="w-14 h-14 rounded-2xl bg-brand-cyan/20 text-brand-cyan flex items-center justify-center mx-auto mb-2">
+            <i data-lucide="check-circle" class="w-8 h-8"></i>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold font-display text-white">
+            Estamos à disposição!
+          </h2>
+          <p class="text-slate-300 text-base max-w-xl mx-auto leading-relaxed">
+            Elimine a imprevisibilidade dos custos spot e transfira o fornecimento de ar comprimido da sua fábrica para quem domina essa demanda.
+          </p>
+
+          <div class="pt-4 flex flex-wrap justify-center gap-3">
+            <a href="https://wa.me/?text=Ol%C3%A1!%20Gostaria%20de%20formalizar%20o%20contrato%20de%20loca%C3%A7%C3%A3o%20do%20Kaeser%20SM%2015%20com%20a%20Myka%20Compressores." target="_blank" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-brand-cyan text-brand-dark font-bold text-sm shadow-glow-cyan">
+              <i data-lucide="message-circle" class="w-4 h-4"></i>
+              <span>Formalizar via WhatsApp</span>
+            </a>
+            <button onclick="toggleSlideDeck(false)" class="px-5 py-3.5 rounded-xl bg-brand-surface border border-slate-600 text-slate-200 text-sm font-semibold hover:border-white">
+              Ver Proposta Completa
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- SLIDE FOOTER CONTROLS -->
+    <div class="h-16 border-t border-brand-border px-6 flex items-center justify-between shrink-0 bg-brand-surface/80">
+      <button onclick="prevSlide()" id="prevSlideBtn" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-brand-dark border border-brand-border text-slate-300 hover:text-white disabled:opacity-30 disabled:pointer-events-none text-xs font-semibold transition-all">
+        <i data-lucide="chevron-left" class="w-4 h-4"></i>
+        <span>Anterior</span>
+      </button>
+
+      <div class="flex items-center gap-1.5" id="slideDots">
+        <!-- Dots injected dynamically -->
+      </div>
+
+      <button onclick="nextSlide()" id="nextSlideBtn" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-brand-cyan text-brand-dark font-bold text-xs hover:brightness-110 transition-all">
+        <span>Próximo</span>
+        <i data-lucide="chevron-right" class="w-4 h-4"></i>
+      </button>
+    </div>
+
+  </div>
+
+
+  <!-- ==================== JAVASCRIPT & CHART.JS CONFIGURATION ==================== -->
+  <script>
+    // Initialize Lucide Icons
+    lucide.createIcons();
+
+    // ==================== INITIALIZE CHART.JS CHARTS ====================
+    window.addEventListener('DOMContentLoaded', () => {
+      
+      // Chart 1: Financial Predictability (Spot Curve vs Full Service Flat/Linear)
+      const ctx1 = document.getElementById('chartFinancialPredictability') || document.getElementById('chartPredictability');
+      if (ctx1) {
+        new Chart(ctx1, {
+          type: 'line',
+          data: {
+            labels: ['M1', 'M2', 'M3 (Pico)', 'M4', 'M5 (Pico)', 'M6', 'M7', 'M8 (Emerg.)'],
+            datasets: [
+              {
+                label: 'Gastos Spot Acumulados',
+                data: [1200, 3400, 9800, 10500, 16200, 17100, 18500, 23000],
+                borderColor: '#f43f5e',
+                backgroundColor: 'rgba(244, 63, 94, 0.15)',
+                borderWidth: 2.5,
+                fill: true,
+                tension: 0.35,
+                pointBackgroundColor: '#f43f5e',
+                pointBorderColor: '#fff',
+                pointRadius: 3.5,
+                pointHoverRadius: 6
+              },
+              {
+                label: 'Myka Full Service (Linear)',
+                data: [2000, 4000, 6000, 8000, 10000, 12000, 14000, 16000],
+                borderColor: '#00e5ff',
+                backgroundColor: 'rgba(0, 229, 255, 0.08)',
+                borderWidth: 2.5,
+                borderDash: [4, 4],
+                fill: true,
+                tension: 0,
+                pointBackgroundColor: '#00e5ff',
+                pointBorderColor: '#fff',
+                pointRadius: 3.5,
+                pointHoverRadius: 6
+              }
+            ]
+          },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            layout: {
+              padding: { top: 10, bottom: 0, left: -4, right: 4 }
+            },
+            interaction: {
+              mode: 'index',
+              intersect: false
+            },
+            plugins: {
+              legend: {
+                display: false // Handled cleanly via HTML header badges
+              },
+              tooltip: {
+                callbacks: {
+                  label: function(context) {
+                    return context.dataset.label + ': R$ ' + context.parsed.y.toLocaleString('pt-BR');
+                  }
+                }
+              }
+            },
+            scales: {
+              x: {
+                grid: { color: 'rgba(255, 255, 255, 0.04)' },
+                ticks: { color: '#94a3b8', font: { size: 9 }, maxRotation: 0 }
+              },
+              y: {
+                grid: { color: 'rgba(255, 255, 255, 0.05)' },
+                ticks: {
+                  color: '#94a3b8',
+                  font: { size: 9 },
+                  callback: function(value) { return 'R$ ' + (value / 1000) + 'k'; }
+                }
+              }
+            }
+          }
+        });
+      }
+
+      // Chart 2: Plans Comparison Bar Chart
+      const ctx2 = document.getElementById('chartPlansComparison');
+      if (ctx2) {
+        new Chart(ctx2, {
+          type: 'bar',
+          data: {
+            labels: ['12 Meses', '36 Meses', '60 Meses'],
+            datasets: [
+              {
+                label: 'Sem Absorção',
+                data: [2500, 2380, 2100],
+                backgroundColor: 'rgba(148, 163, 184, 0.75)',
+                borderColor: '#94a3b8',
+                borderWidth: 1.5,
+                borderRadius: 6,
+                barPercentage: 0.75,
+                categoryPercentage: 0.8
+              },
+              {
+                label: 'COM Absorção Atlas GX11',
+                data: [null, 2180, 2000],
+                backgroundColor: 'rgba(0, 229, 255, 0.9)',
+                borderColor: '#00e5ff',
+                borderWidth: 1.5,
+                borderRadius: 6,
+                barPercentage: 0.75,
+                categoryPercentage: 0.8
+              }
+            ]
+          },
+          plugins: [{
+            id: 'customBarValues',
+            beforeDatasetsDraw(chart) {
+              // Center the single 12 Meses bar on its category tick
+              const meta0 = chart.getDatasetMeta(0);
+              const meta1 = chart.getDatasetMeta(1);
+              if (meta0.data[0] && meta1.data[0]) {
+                const categoryCenterX = chart.scales.x.getPixelForTick(0);
+                const barWidth = (meta0.data[1].width || 28) * 1.3;
+                meta0.data[0].x = categoryCenterX;
+                meta0.data[0].width = barWidth;
+              }
+            },
+            afterDatasetsDraw(chart) {
+              const { ctx } = chart;
+              ctx.save();
+              ctx.textAlign = 'center';
+              ctx.textBaseline = 'bottom';
+              ctx.font = 'bold 11px Plus Jakarta Sans, sans-serif';
+
+              chart.data.datasets.forEach((dataset, datasetIndex) => {
+                const meta = chart.getDatasetMeta(datasetIndex);
+                meta.data.forEach((bar, index) => {
+                  const val = dataset.data[index];
+                  if (val !== null && val !== undefined && val > 0) {
+                    ctx.fillStyle = datasetIndex === 1 ? '#00e5ff' : '#f1f5f9';
+                    ctx.fillText('R$ ' + val.toLocaleString('pt-BR'), bar.x, bar.y - 4);
+                  }
+                });
+              });
+              ctx.restore();
+            }
+          }],
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            layout: {
+              padding: {
+                top: 22,
+                bottom: 0,
+                left: 0,
+                right: 4
+              }
+            },
+            plugins: {
+              legend: {
+                display: false // Handled cleanly via HTML header badges
+              },
+              tooltip: {
+                callbacks: {
+                  label: function(context) {
+                    if (context.parsed.y === null || context.parsed.y === 0) return 'Não aplicável nesta opção';
+                    return context.dataset.label + ': R$ ' + context.parsed.y.toLocaleString('pt-BR', {minimumFractionDigits: 2}) + ' / mês';
+                  }
+                }
+              }
+            },
+            scales: {
+              x: {
+                grid: { display: false },
+                ticks: { color: '#cbd5e1', font: { size: 10, weight: 'bold' }, maxRotation: 0 }
+              },
+              y: {
+                beginAtZero: false,
+                min: 1000,
+                max: 2750,
+                grid: { color: 'rgba(255, 255, 255, 0.05)' },
+                ticks: {
+                  color: '#94a3b8',
+                  font: { size: 9 },
+                  stepSize: 500,
+                  callback: function(value) { return 'R$ ' + value; }
+                }
+              }
+            }
+          }
+        });
+      }
+
+      // Chart 3: TCO Donut Chart (Life Cycle Cost)
+      const ctx3 = document.getElementById('chartTCO');
+      if (ctx3) {
+        new Chart(ctx3, {
+          type: 'doughnut',
+          data: {
+            labels: [
+              'Energia Elétrica (78%)',
+              'Manutenções & Peças (12%)',
+              'Locação / Aquisição (10%)'
+            ],
+            datasets: [
+              {
+                data: [78, 12, 10],
+                backgroundColor: [
+                  '#00e5ff',
+                  '#2dd4bf',
+                  '#475569'
+                ],
+                borderColor: '#070b14',
+                borderWidth: 3,
+                hoverOffset: 6
+              }
+            ]
+          },
+          plugins: [{
+            id: 'tcoCenterText',
+            afterDraw(chart) {
+              const { ctx } = chart;
+              const meta = chart.getDatasetMeta(0);
+              if (!meta || !meta.data || !meta.data[0]) return;
+              const x = meta.data[0].x;
+              const y = meta.data[0].y;
+              ctx.save();
+              ctx.textAlign = 'center';
+              ctx.textBaseline = 'middle';
+              ctx.font = 'bold 20px Plus Jakarta Sans, sans-serif';
+              ctx.fillStyle = '#00e5ff';
+              ctx.fillText('78%', x, y - 6);
+              ctx.font = '10px Plus Jakarta Sans, sans-serif';
+              ctx.fillStyle = '#94a3b8';
+              ctx.fillText('Energia', x, y + 12);
+              ctx.restore();
+            }
+          }],
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            cutout: '68%',
+            plugins: {
+              legend: {
+                display: true,
+                position: 'bottom',
+                labels: {
+                  color: '#cbd5e1',
+                  font: { size: 10, family: 'Plus Jakarta Sans' },
+                  boxWidth: 10,
+                  padding: 8
+                }
+              },
+              tooltip: {
+                callbacks: {
+                  label: function(context) {
+                    return context.label + ': ' + context.parsed + '% do custo total';
+                  }
+                }
+              }
+            }
+          }
+        });
+      }
+
+    });
+
+    // Slide Deck Logic
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slide-item');
+    const totalSlides = slides.length;
+    const currentSlideNumEl = document.getElementById('currentSlideNum');
+    const totalSlidesNumEl = document.getElementById('totalSlidesNum');
+    const slideDeckModal = document.getElementById('slideDeckModal');
+    const prevBtn = document.getElementById('prevSlideBtn');
+    const nextBtn = document.getElementById('nextSlideBtn');
+    const slideDotsContainer = document.getElementById('slideDots');
+
+    if (totalSlidesNumEl) {
+      totalSlidesNumEl.innerText = totalSlides;
+    }
+
+    // Generate Dots
+    if (slideDotsContainer) {
+      slideDotsContainer.innerHTML = '';
+      for (let i = 0; i < totalSlides; i++) {
+        const dot = document.createElement('button');
+        dot.className = `w-2.5 h-2.5 rounded-full transition-all ${i === 0 ? 'bg-brand-cyan w-6' : 'bg-slate-700'}`;
+        dot.onclick = () => goToSlide(i);
+        slideDotsContainer.appendChild(dot);
+      }
+    }
+
+    function updateSlideUI() {
+      slides.forEach((slide, index) => {
+        if (index === currentSlide) {
+          slide.classList.remove('hidden');
+          slide.classList.add('block');
+        } else {
+          slide.classList.remove('block');
+          slide.classList.add('hidden');
+        }
+      });
+
+      if (currentSlideNumEl) currentSlideNumEl.innerText = currentSlide + 1;
+      if (prevBtn) prevBtn.disabled = currentSlide === 0;
+      
+      if (nextBtn) {
+        if (currentSlide === totalSlides - 1) {
+          nextBtn.innerHTML = `<span>Finalizar</span> <i data-lucide="check" class="w-4 h-4"></i>`;
+        } else {
+          nextBtn.innerHTML = `<span>Próximo</span> <i data-lucide="chevron-right" class="w-4 h-4"></i>`;
+        }
+      }
+
+      // Update Dots
+      if (slideDotsContainer && slideDotsContainer.children) {
+        Array.from(slideDotsContainer.children).forEach((dot, idx) => {
+          if (idx === currentSlide) {
+            dot.className = 'w-6 h-2.5 rounded-full bg-brand-cyan transition-all';
+          } else {
+            dot.className = 'w-2.5 h-2.5 rounded-full bg-slate-700 hover:bg-slate-500 transition-all';
+          }
+        });
+      }
+
+      lucide.createIcons();
+    }
+
+    function toggleSlideDeck(open) {
+      if (open) {
+        slideDeckModal.classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
+      } else {
+        slideDeckModal.classList.add('hidden');
+        document.body.style.overflow = 'auto';
+      }
+    }
+
+    function nextSlide() {
+      if (currentSlide < totalSlides - 1) {
+        currentSlide++;
+        updateSlideUI();
+      } else {
+        toggleSlideDeck(false);
+      }
+    }
+
+    function prevSlide() {
+      if (currentSlide > 0) {
+        currentSlide--;
+        updateSlideUI();
+      }
+    }
+
+    function goToSlide(index) {
+      currentSlide = index;
+      updateSlideUI();
+    }
+
+    // Keyboard navigation for slides
+    document.addEventListener('keydown', (e) => {
+      if (!slideDeckModal.classList.contains('hidden')) {
+        if (e.key === 'ArrowRight' || e.key === ' ' || e.key === 'Enter') {
+          nextSlide();
+        } else if (e.key === 'ArrowLeft') {
+          prevSlide();
+        } else if (e.key === 'Escape') {
+          toggleSlideDeck(false);
+        }
+      }
+    });
+
+    // ==================== SMART FULL-PAGE SNAP SCROLL & ACTIVE NAV SPY ====================
+    (function initFullPageSnap() {
+      const slideSections = Array.from(document.querySelectorAll('main > section.screen-slide'));
+      const navLinks = Array.from(document.querySelectorAll('#topNavLinks .nav-link'));
+      if (!slideSections.length) return;
+
+      let isScrolling = false;
+      let activeIndex = 0;
+
+      function updateActiveNav() {
+        const scrollTop = window.scrollY || document.documentElement.scrollTop || document.body.scrollTop;
+        const offset = 120;
+        
+        let currentSectionId = '';
+        slideSections.forEach(section => {
+          const top = section.offsetTop - 56;
+          const height = section.offsetHeight;
+          if (scrollTop >= top - offset && scrollTop < top + height - offset) {
+            currentSectionId = section.id;
+          }
+        });
+
+        navLinks.forEach(link => {
+          const targetSection = link.getAttribute('data-section');
+          if (targetSection === currentSectionId) {
+            link.className = 'nav-link px-3 py-1.5 rounded-lg text-brand-dark bg-brand-cyan font-bold shadow-glow-cyan transition-all';
+          } else {
+            link.className = 'nav-link px-3 py-1.5 rounded-lg text-slate-300 hover:text-brand-cyan hover:bg-white/5 font-semibold transition-all';
+          }
+        });
+      }
+
+      window.addEventListener('scroll', updateActiveNav, { passive: true });
+      updateActiveNav(); // Initial call
+
+      function getCurrentIndex() {
+        const scrollTop = window.scrollY || document.documentElement.scrollTop || document.body.scrollTop;
+        const slideHeight = window.innerHeight - 56;
+        return Math.round(scrollTop / slideHeight);
+      }
+
+      function scrollToSlideIndex(index) {
+        if (index < 0 || index >= slideSections.length) return;
+        isScrolling = true;
+        activeIndex = index;
+        const targetSlide = slideSections[index];
+        if (targetSlide) {
+          const targetTop = targetSlide.offsetTop - 56;
+          window.scrollTo({
+            top: targetTop >= 0 ? targetTop : 0,
+            behavior: 'smooth'
+          });
+        }
+        setTimeout(() => {
+          isScrolling = false;
+          updateActiveNav();
+        }, 700);
+      }
+
+      // Wheel event interceptor for deterministic slide-by-slide snap
+      window.addEventListener('wheel', (e) => {
+        if (!slideDeckModal.classList.contains('hidden')) return; // ignore if modal is open
+        if (isScrolling) {
+          e.preventDefault();
+          return;
+        }
+
+        if (Math.abs(e.deltaY) > 25) {
+          e.preventDefault();
+          activeIndex = getCurrentIndex();
+          if (e.deltaY > 0) {
+            // Scroll down
+            if (activeIndex < slideSections.length - 1) {
+              scrollToSlideIndex(activeIndex + 1);
+            }
+          } else {
+            // Scroll up
+            if (activeIndex > 0) {
+              scrollToSlideIndex(activeIndex - 1);
+            }
+          }
+        }
+      }, { passive: false });
+
+      // Keyboard arrow navigation for main page
+      window.addEventListener('keydown', (e) => {
+        if (!slideDeckModal.classList.contains('hidden')) return;
+        if (e.key === 'ArrowDown' || e.key === 'PageDown') {
+          e.preventDefault();
+          activeIndex = getCurrentIndex();
+          if (activeIndex < slideSections.length - 1) scrollToSlideIndex(activeIndex + 1);
+        } else if (e.key === 'ArrowUp' || e.key === 'PageUp') {
+          e.preventDefault();
+          activeIndex = getCurrentIndex();
+          if (activeIndex > 0) scrollToSlideIndex(activeIndex - 1);
+        }
+      });
+    })();
+
+    // Auto-reload (Live Preview)
+    (function autoReload() {
+      let lastCheck = 0;
+      setInterval(() => {
+        fetch('/__live_reload_check')
+          .then(res => res.text())
+          .then(version => {
+            if (lastCheck !== 0 && version !== lastCheck) {
+              console.log('[LiveReload] Alteração detectada, recarregando...');
+              location.reload();
+            }
+            lastCheck = version;
+          })
+          .catch(() => {});
+      }, 700);
+    })();
+  </script>
+</body>
+</html>
