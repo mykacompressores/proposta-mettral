@@ -71,16 +71,14 @@
       scroll-snap-type: y mandatory;
       scroll-padding-top: 56px;
       overflow-y: scroll;
-      overflow-x: auto;
+      overflow-x: hidden;
       height: 100%;
-      min-width: 1400px;
     }
 
     body {
-      overflow-x: auto;
+      overflow-x: hidden;
       margin: 0;
       padding: 0;
-      min-width: 1400px;
     }
     
     .screen-slide {
@@ -97,8 +95,7 @@
       box-sizing: border-box;
       position: relative;
       overflow: hidden;
-      min-width: 1400px;
-      padding: clamp(0.75rem, 1.8vh, 1.5rem) clamp(1rem, 2.5vw, 3rem) clamp(0.75rem, 1.8vh, 1.5rem) clamp(1rem, 2.5vw, 3rem);
+      padding: clamp(0.35rem, 1vh, 0.75rem) clamp(0.75rem, 1.5vw, 2rem);
     }
 
     /* Ambient Tech Grid Background */
@@ -159,14 +156,16 @@
       </a>
 
       <!-- NAVIGATION LINKS -->
-      <nav id="topNavLinks" class="hidden lg:flex items-center gap-1 sm:gap-2 text-xs font-semibold text-slate-300">
-        <a href="#contexto" data-section="contexto" class="nav-link px-3 py-1.5 rounded-lg text-slate-300 hover:text-brand-cyan hover:bg-white/5 transition-all">Diagnóstico</a>
-        <a href="#equipamento" data-section="equipamento" class="nav-link px-3 py-1.5 rounded-lg text-slate-300 hover:text-brand-cyan hover:bg-white/5 transition-all">Kaeser SM 15</a>
-        <a href="#full-service" data-section="full-service" class="nav-link px-3 py-1.5 rounded-lg text-slate-300 hover:text-brand-cyan hover:bg-white/5 transition-all">Full Service</a>
-        <a href="#graficos-comparativos" data-section="graficos-comparativos" class="nav-link px-3 py-1.5 rounded-lg text-slate-300 hover:text-brand-cyan hover:bg-white/5 transition-all">Gráficos</a>
-        <a href="#absorcao" data-section="absorcao" class="nav-link px-3 py-1.5 rounded-lg text-slate-300 hover:text-brand-cyan hover:bg-white/5 transition-all">Absorção</a>
-        <a href="#propostas" data-section="propostas" class="nav-link px-3 py-1.5 rounded-lg text-slate-300 hover:text-brand-cyan hover:bg-white/5 transition-all">Planos</a>
-        <a href="#formalizacao" data-section="formalizacao" class="nav-link px-3 py-1.5 rounded-lg text-slate-300 hover:text-brand-cyan hover:bg-white/5 transition-all">Contratação</a>
+      <nav id="topNavLinks" class="hidden lg:flex items-center gap-1 sm:gap-1.5 text-xs font-semibold text-slate-300">
+        <a href="#contexto" data-section="contexto" class="nav-link px-2.5 py-1.5 rounded-lg text-slate-300 hover:text-brand-cyan hover:bg-white/5 transition-all">Diagnóstico</a>
+        <a href="#equipamento" data-section="equipamento" class="nav-link px-2.5 py-1.5 rounded-lg text-slate-300 hover:text-brand-cyan hover:bg-white/5 transition-all">Kaeser SM 15</a>
+        <a href="#upgrade-25hp" data-section="upgrade-25hp" class="nav-link px-2.5 py-1.5 rounded-lg text-amber-300 hover:text-amber-200 hover:bg-white/5 transition-all flex items-center gap-1 font-bold"><i data-lucide="arrow-up-circle" class="w-3.5 h-3.5 text-amber-400"></i> Upgrade 25 HP</a>
+        <a href="#full-service" data-section="full-service" class="nav-link px-2.5 py-1.5 rounded-lg text-slate-300 hover:text-brand-cyan hover:bg-white/5 transition-all">Full Service</a>
+        <a href="#graficos-comparativos" data-section="graficos-comparativos" class="nav-link px-2.5 py-1.5 rounded-lg text-slate-300 hover:text-brand-cyan hover:bg-white/5 transition-all">Gráficos</a>
+        <a href="#absorcao" data-section="absorcao" class="nav-link px-2.5 py-1.5 rounded-lg text-slate-300 hover:text-brand-cyan hover:bg-white/5 transition-all">Absorção</a>
+        <a href="#propostas" data-section="propostas" class="nav-link px-2.5 py-1.5 rounded-lg text-slate-300 hover:text-brand-cyan hover:bg-white/5 transition-all">Planos SM 15</a>
+        <a href="#propostas-25hp" data-section="propostas-25hp" class="nav-link px-2.5 py-1.5 rounded-lg text-teal-300 hover:text-brand-cyan hover:bg-white/5 transition-all flex items-center gap-1 font-bold"><i data-lucide="layers" class="w-3.5 h-3.5 text-teal-400"></i> Planos 25 HP</a>
+        <a href="#formalizacao" data-section="formalizacao" class="nav-link px-2.5 py-1.5 rounded-lg text-slate-300 hover:text-brand-cyan hover:bg-white/5 transition-all">Contratação</a>
       </nav>
     </div>
   </header>
@@ -532,6 +531,160 @@
 
           </div>
 
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==================== SEÇÃO: UPGRADE COMPRESSOR 25 HP ==================== -->
+    <section id="upgrade-25hp" class="screen-slide border-b border-brand-border bg-gradient-to-b from-brand-surface/40 to-brand-dark">
+      <div class="max-w-[1550px] w-full mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-between h-full pb-1">
+        
+        <!-- Header -->
+        <div class="text-center max-w-4xl mx-auto mb-2 shrink-0">
+          <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-400/10 border border-amber-400/30 text-amber-300 text-xs font-mono font-bold uppercase tracking-wider mb-1">
+            <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+            <span>Flexibilidade Operacional & Escalabilidade</span>
+          </div>
+          <h2 class="text-xl sm:text-2xl font-bold font-display text-white mt-0.5">
+            Opção de Upgrade: Compressores de 25 HP (18,5 kW)
+          </h2>
+          <p class="text-slate-300 text-xs sm:text-sm mt-0.5 max-w-3xl mx-auto leading-relaxed">
+            Iniciamos com o <strong>Kaeser SM 15</strong> e monitoramos a demanda durante 3 meses. Havendo necessidade de maior vazão, efetuamos o upgrade imediato para 25 HP.
+          </p>
+        </div>
+
+        <!-- 3-CARDS SHOWCASE: KAESER, ATLAS COPCO & INGERSOLL RAND (25 HP) -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5 lg:gap-6 items-stretch w-full flex-1 my-auto min-h-0 py-2">
+          
+          <!-- CARD 1: KAESER 25 HP -->
+          <div class="bg-gradient-to-b from-[#141e30] via-brand-card to-brand-dark border border-amber-500/30 hover:border-amber-400 rounded-2xl p-4 sm:p-5 flex flex-col justify-between relative group shadow-lg hover:shadow-glow-cyan/20 transition-all duration-300 h-full">
+            <div class="flex items-center justify-between gap-2 mb-2 shrink-0">
+              <span class="px-2.5 py-1 rounded-lg text-xs font-mono font-bold bg-amber-400/15 text-amber-300 border border-amber-400/30 uppercase">
+                Opção 01 • Kaeser
+              </span>
+              <span class="text-xs font-mono text-slate-300 bg-brand-dark/80 px-2.5 py-0.5 rounded border border-slate-700">18,5 kW / 25 HP</span>
+            </div>
+
+            <!-- Image (Expanded to fill card) -->
+            <div class="flex-1 w-full flex items-center justify-center my-auto min-h-0 overflow-hidden py-2">
+              <img src="./kaeser_25hp.jpg" alt="Compressor Kaeser 25 HP" class="w-full h-full max-h-[230px] sm:max-h-[260px] object-contain rounded-xl drop-shadow-[0_12px_24px_rgba(0,0,0,0.6)] group-hover:scale-105 transition-transform duration-500" />
+            </div>
+
+            <!-- Specs & Info -->
+            <div class="pt-2.5 border-t border-white/10 mt-2 shrink-0">
+              <div class="flex items-center justify-between mb-2">
+                <h4 class="text-sm sm:text-base font-bold text-white font-display">Kaeser 25 HP</h4>
+                <span class="text-xs font-mono text-amber-300 font-semibold">Perfil SIGMA</span>
+              </div>
+              <div class="grid grid-cols-3 gap-1.5 text-center text-xs font-mono">
+                <div class="bg-brand-dark/80 p-2 rounded-lg border border-slate-700/60">
+                  <span class="text-slate-400 block text-[10px]">Vazão</span>
+                  <strong class="text-amber-300 text-xs sm:text-sm">~3,10 m³/min</strong>
+                </div>
+                <div class="bg-brand-dark/80 p-2 rounded-lg border border-slate-700/60">
+                  <span class="text-slate-400 block text-[10px]">Pressão</span>
+                  <strong class="text-white text-xs sm:text-sm">7,5 a 12 bar</strong>
+                </div>
+                <div class="bg-brand-dark/80 p-2 rounded-lg border border-slate-700/60">
+                  <span class="text-slate-400 block text-[10px]">Motor</span>
+                  <strong class="text-brand-cyan text-xs sm:text-sm">IE4 Premium</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 2: ATLAS COPCO 25 HP -->
+          <div class="bg-gradient-to-b from-[#141e30] via-brand-card to-brand-dark border border-cyan-500/30 hover:border-cyan-400 rounded-2xl p-4 sm:p-5 flex flex-col justify-between relative group shadow-lg hover:shadow-glow-cyan/20 transition-all duration-300 h-full">
+            <div class="flex items-center justify-between gap-2 mb-2 shrink-0">
+              <span class="px-2.5 py-1 rounded-lg text-xs font-mono font-bold bg-brand-cyan/15 text-brand-cyan border border-brand-cyan/30 uppercase">
+                Opção 02 • Atlas Copco
+              </span>
+              <span class="text-xs font-mono text-slate-300 bg-brand-dark/80 px-2.5 py-0.5 rounded border border-slate-700">18,5 kW / 25 HP</span>
+            </div>
+
+            <!-- Image (Expanded to fill card) -->
+            <div class="flex-1 w-full flex items-center justify-center my-auto min-h-0 overflow-hidden py-2">
+              <img src="./atlas_25hp.jpg" alt="Compressor Atlas Copco 25 HP" class="w-full h-full max-h-[230px] sm:max-h-[260px] object-contain rounded-xl drop-shadow-[0_12px_24px_rgba(0,0,0,0.6)] group-hover:scale-105 transition-transform duration-500" />
+            </div>
+
+            <!-- Specs & Info -->
+            <div class="pt-2.5 border-t border-white/10 mt-2 shrink-0">
+              <div class="flex items-center justify-between mb-2">
+                <h4 class="text-sm sm:text-base font-bold text-white font-display">Atlas Copco 25 HP</h4>
+                <span class="text-xs font-mono text-brand-cyan font-semibold">Elektronikon</span>
+              </div>
+              <div class="grid grid-cols-3 gap-1.5 text-center text-xs font-mono">
+                <div class="bg-brand-dark/80 p-2 rounded-lg border border-slate-700/60">
+                  <span class="text-slate-400 block text-[10px]">Vazão</span>
+                  <strong class="text-brand-cyan text-xs sm:text-sm">~3,00 m³/min</strong>
+                </div>
+                <div class="bg-brand-dark/80 p-2 rounded-lg border border-slate-700/60">
+                  <span class="text-slate-400 block text-[10px]">Pressão</span>
+                  <strong class="text-white text-xs sm:text-sm">7,5 a 13 bar</strong>
+                </div>
+                <div class="bg-brand-dark/80 p-2 rounded-lg border border-slate-700/60">
+                  <span class="text-slate-400 block text-[10px]">Painel</span>
+                  <strong class="text-teal-300 text-xs sm:text-sm">Digital 4.0</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 3: INGERSOLL RAND 25 HP -->
+          <div class="bg-gradient-to-b from-[#141e30] via-brand-card to-brand-dark border border-teal-500/30 hover:border-teal-400 rounded-2xl p-4 sm:p-5 flex flex-col justify-between relative group shadow-lg hover:shadow-glow-cyan/20 transition-all duration-300 h-full">
+            <div class="flex items-center justify-between gap-2 mb-2 shrink-0">
+              <span class="px-2.5 py-1 rounded-lg text-xs font-mono font-bold bg-teal-500/15 text-teal-300 border border-teal-500/30 uppercase">
+                Opção 03 • Ingersoll Rand
+              </span>
+              <span class="text-xs font-mono text-slate-300 bg-brand-dark/80 px-2.5 py-0.5 rounded border border-slate-700">18,5 kW / 25 HP</span>
+            </div>
+
+            <!-- Image (Expanded to fill card) -->
+            <div class="flex-1 w-full flex items-center justify-center my-auto min-h-0 overflow-hidden py-2">
+              <img src="./ingersoll_25hp.jpg" alt="Compressor Ingersoll Rand 25 HP" class="w-full h-full max-h-[230px] sm:max-h-[260px] object-contain rounded-xl drop-shadow-[0_12px_24px_rgba(0,0,0,0.6)] group-hover:scale-105 transition-transform duration-500" />
+            </div>
+
+            <!-- Specs & Info -->
+            <div class="pt-2.5 border-t border-white/10 mt-2 shrink-0">
+              <div class="flex items-center justify-between mb-2">
+                <h4 class="text-sm sm:text-base font-bold text-white font-display">Ingersoll Rand 25 HP</h4>
+                <span class="text-xs font-mono text-teal-300 font-semibold">Xe-Series</span>
+              </div>
+              <div class="grid grid-cols-3 gap-1.5 text-center text-xs font-mono">
+                <div class="bg-brand-dark/80 p-2 rounded-lg border border-slate-700/60">
+                  <span class="text-slate-400 block text-[10px]">Vazão</span>
+                  <strong class="text-teal-300 text-xs sm:text-sm">~2,95 m³/min</strong>
+                </div>
+                <div class="bg-brand-dark/80 p-2 rounded-lg border border-slate-700/60">
+                  <span class="text-slate-400 block text-[10px]">Pressão</span>
+                  <strong class="text-white text-xs sm:text-sm">7,5 a 14 bar</strong>
+                </div>
+                <div class="bg-brand-dark/80 p-2 rounded-lg border border-slate-700/60">
+                  <span class="text-slate-400 block text-[10px]">Linha</span>
+                  <strong class="text-slate-200 text-xs sm:text-sm">Heavy Duty</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- UPGRADE COMMITMENT BANNER -->
+        <div class="mt-2 p-3 sm:p-4 rounded-2xl bg-gradient-to-r from-amber-950/40 via-brand-surface/90 to-amber-950/40 border border-amber-500/30 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs sm:text-sm shrink-0 shadow-md">
+          <div class="flex items-center gap-3 text-slate-200 text-center sm:text-left">
+            <div class="w-8 h-8 rounded-xl bg-amber-400/20 border border-amber-400/40 text-amber-300 flex items-center justify-center shrink-0">
+              <i data-lucide="refresh-cw" class="w-4 h-4"></i>
+            </div>
+            <span>
+              <strong class="text-amber-300">Garantia de Estoque:</strong> Equipamento fornecido conforme disponibilidade em estoque no momento do upgrade (Kaeser, Atlas ou Ingersoll). <strong>Sem multas de troca</strong> e Full Service 100% mantido.
+            </span>
+          </div>
+          <a href="#propostas-25hp" class="px-4 py-2 rounded-xl bg-gradient-to-r from-amber-400 to-amber-500 text-brand-dark font-mono font-bold text-xs shrink-0 hover:brightness-110 transition-all flex items-center gap-1.5 shadow-md">
+            <span>Ver Planos 25 HP</span>
+            <i data-lucide="arrow-down" class="w-3.5 h-3.5"></i>
+          </a>
         </div>
 
       </div>
@@ -1240,6 +1393,177 @@
     </section>
 
 
+    <!-- ==================== SEÇÃO: PLANOS 25 HP ==================== -->
+    <section id="propostas-25hp" class="screen-slide border-b border-brand-border bg-gradient-to-b from-brand-surface/70 to-brand-dark">
+      <div class="max-w-[1550px] w-full mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-between flex-1 h-full py-1">
+        
+        <!-- Header -->
+        <div class="text-center max-w-4xl mx-auto mb-1 shrink-0">
+          <div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-teal-400/10 border border-teal-400/30 text-teal-300 text-[10px] font-mono font-bold uppercase tracking-wider mb-0.5">
+            <i data-lucide="layers" class="w-3.5 h-3.5"></i>
+            <span>Matriz Comercial • Compressores de 25 HP</span>
+          </div>
+          <h2 class="text-xl sm:text-2xl font-bold font-display text-white mt-0.5">
+            Planos de Contrato • Upgrade 25 HP (18,5 kW)
+          </h2>
+          <p class="text-slate-300 text-xs sm:text-sm mt-0.5 max-w-3xl mx-auto leading-relaxed">
+            Valores mensais pré-fixados caso a Mettral decida migrar para 25 HP (Kaeser, Atlas Copco ou Ingersoll Rand) após 3 meses de monitoramento.
+          </p>
+        </div>
+
+        <!-- 2 PROPOSAL CARDS GRID (36 MESES & 60 MESES) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 lg:gap-8 max-w-5xl mx-auto items-stretch w-full flex-1 min-h-0 my-1 py-1">
+          
+          <!-- ==================== PLANO 25 HP - 36 MESES ==================== -->
+          <div class="bg-brand-card/90 border border-brand-border hover:border-teal-500/50 rounded-2xl p-5 sm:p-6 flex flex-col justify-between h-full transition-all duration-300 hover:-translate-y-0.5 print-card relative shadow-xl">
+            <div class="flex-1 flex flex-col justify-between">
+              <div>
+                <!-- Badge -->
+                <div class="flex items-center justify-between gap-2 mb-2.5">
+                  <span class="px-2.5 py-1 rounded-lg text-xs font-mono font-bold bg-teal-950/60 text-teal-300 border border-teal-500/30 uppercase">
+                    Upgrade 25 HP • 36 Meses
+                  </span>
+                  <span class="text-xs text-teal-300 font-medium">Prazo: <strong>36 meses</strong></span>
+                </div>
+
+                <h3 class="text-lg sm:text-xl font-bold text-white font-display">
+                  Contrato 36 Meses (25 HP)
+                </h3>
+                <p class="text-xs text-slate-400 mt-0.5 mb-3">
+                  Equilíbrio ideal de prazo para atender à expansão produtiva.
+                </p>
+
+                <!-- Pricing Box -->
+                <div class="p-3.5 sm:p-4 rounded-xl bg-teal-950/40 border border-teal-500/40 mb-3 shadow-inner">
+                  <div class="flex items-center justify-between mb-0.5">
+                    <span class="text-xs font-bold uppercase font-mono text-teal-300">
+                      Investimento Mensal 25 HP
+                    </span>
+                    <span class="text-xs bg-teal-500/20 text-teal-300 font-bold px-2 py-0.5 rounded">
+                      36 Meses
+                    </span>
+                  </div>
+                  <div class="flex items-baseline gap-1 mt-1">
+                    <span class="text-sm font-bold text-slate-300">R$</span>
+                    <span class="text-3xl sm:text-4xl font-black text-teal-300 font-display tracking-tight">3.950<span class="text-lg">,00</span></span>
+                    <span class="text-slate-400 text-xs">/ mês</span>
+                  </div>
+                </div>
+
+                <!-- Highlight Box -->
+                <div class="p-2.5 rounded-xl bg-brand-dark/70 border border-teal-500/20 text-xs text-slate-300 leading-relaxed mb-3">
+                  <strong class="text-teal-300">Troca sem Multas:</strong> Transição simplificada após os 3 meses de teste, sem taxa de rescisão do SM 15.
+                </div>
+              </div>
+            </div>
+
+            <!-- Conditions List -->
+            <div class="space-y-2 text-xs sm:text-sm text-slate-300 pt-3 border-t border-brand-border/60">
+              <div class="flex items-center gap-2.5">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-teal-300 shrink-0"></i>
+                <span>Compressor 25 HP (Kaeser, Atlas ou Ingersoll)</span>
+              </div>
+              <div class="flex items-center gap-2.5">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-teal-300 shrink-0"></i>
+                <span>Vazão aumentada para até 3,10 m³/min (~110 CFM)</span>
+              </div>
+              <div class="flex items-center gap-2.5">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-teal-300 shrink-0"></i>
+                <span>Gestão Full Service & Backup inclusos 100%</span>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- ==================== PLANO 25 HP - 60 MESES (HERO DESTAQUE) ==================== -->
+          <div class="bg-gradient-to-b from-brand-card via-brand-surface to-brand-card border-2 border-brand-cyan rounded-2xl p-5 sm:p-6 flex flex-col justify-between h-full relative shadow-glow-cyan transition-all duration-300 hover:-translate-y-0.5 print-card">
+            
+            <!-- Recommended Ribbon -->
+            <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-gradient-to-r from-brand-cyan to-teal-400 text-brand-dark font-black text-xs uppercase tracking-wider px-4 py-1 rounded-full shadow-lg flex items-center gap-1.5">
+              <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
+              Menor Custo por HP Gerado
+            </div>
+
+            <div class="flex-1 flex flex-col justify-between">
+              <div>
+                <!-- Badge -->
+                <div class="flex items-center justify-between gap-2 mb-2.5 mt-0.5">
+                  <span class="px-2.5 py-1 rounded-lg text-xs font-mono font-bold bg-brand-cyan text-brand-dark uppercase">
+                    Upgrade 25 HP • 60 Meses
+                  </span>
+                  <span class="text-xs text-brand-cyan font-bold">Prazo: <strong>60 meses</strong></span>
+                </div>
+
+                <h3 class="text-lg sm:text-xl font-bold text-white font-display">
+                  Contrato 60 Meses (25 HP)
+                </h3>
+                <p class="text-xs text-slate-300 mt-0.5 mb-3">
+                  Máxima economia em longo prazo e menor custo fixo por m³ gerado.
+                </p>
+
+                <!-- Pricing Box (Hero) -->
+                <div class="p-3.5 sm:p-4 rounded-xl bg-teal-950/60 border-2 border-brand-cyan mb-3 shadow-inner relative overflow-hidden">
+                  <div class="flex items-center justify-between mb-0.5">
+                    <span class="text-xs font-bold uppercase font-mono text-brand-cyan">
+                      Investimento Mensal 25 HP
+                    </span>
+                    <span class="text-xs bg-brand-cyan text-brand-dark font-black px-2 py-0.5 rounded">
+                      MELHOR VALOR 25 HP
+                    </span>
+                  </div>
+                  <div class="flex items-baseline gap-1 mt-1">
+                    <span class="text-sm font-bold text-slate-300">R$</span>
+                    <span class="text-3xl sm:text-4xl font-black text-brand-cyan font-display tracking-tight">3.490<span class="text-lg">,00</span></span>
+                    <span class="text-slate-300 text-xs">/ mês</span>
+                  </div>
+                </div>
+
+                <!-- Highlight Box -->
+                <div class="p-2.5 rounded-xl bg-brand-surface/70 border border-brand-cyan/30 text-xs text-slate-300 leading-relaxed mb-3">
+                  <strong class="text-brand-cyan">Destaque Exclusivo:</strong> O menor valor mensal do mercado para compressores de 25 HP com Full Service total.
+                </div>
+              </div>
+            </div>
+
+            <!-- Conditions List -->
+            <div class="space-y-2 text-xs sm:text-sm text-slate-200 pt-3 border-t border-brand-border/60">
+              <div class="flex items-center gap-2.5">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-brand-cyan shrink-0"></i>
+                <span>Compressor 25 HP (Kaeser, Atlas ou Ingersoll)</span>
+              </div>
+              <div class="flex items-center gap-2.5">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-brand-cyan shrink-0"></i>
+                <span>Vazão aumentada para até 3,10 m³/min (~110 CFM)</span>
+              </div>
+              <div class="flex items-center gap-2.5">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-brand-cyan shrink-0"></i>
+                <span>Gestão Full Service, compressor backup e atendimento prioritário</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- BOTTOM CONNECTED SUMMARY FOOTER -->
+        <div class="mt-1 p-3 sm:p-3.5 rounded-2xl bg-gradient-to-r from-teal-950/80 via-brand-surface/90 to-teal-950/80 border border-brand-cyan/30 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs sm:text-sm shrink-0 shadow-md">
+          <div class="flex items-center gap-3 text-slate-200 text-center sm:text-left">
+            <div class="w-7 h-7 rounded-lg bg-brand-cyan/20 border border-brand-cyan/40 text-brand-cyan flex items-center justify-center shrink-0">
+              <i data-lucide="check-check" class="w-4 h-4"></i>
+            </div>
+            <span>
+              <strong>Previsibilidade Contratual:</strong> A Mettral tem total liberdade de iniciar no Kaeser SM 15 e migrar para o 25 HP com valores e prazos 100% acordados.
+            </span>
+          </div>
+          <a href="#formalizacao" class="px-4 py-2 rounded-xl bg-gradient-to-r from-brand-cyan to-teal-400 text-brand-dark font-mono font-bold text-xs shrink-0 hover:brightness-110 transition-all flex items-center gap-1.5 shadow-md">
+            <span>Avançar para Contratação</span>
+            <i data-lucide="arrow-down" class="w-3.5 h-3.5"></i>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+
     <!-- ==================== FORMALIZAÇÃO DO CONTRATO E ETAPAS ==================== -->
     <section id="formalizacao" class="screen-slide border-b border-brand-border">
       <div class="max-w-[1550px] w-full mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-between h-full pb-2">
@@ -1398,7 +1722,7 @@
       <!-- Slide Counter & Controls -->
       <div class="flex items-center gap-4">
         <div class="text-xs font-mono text-brand-cyan bg-brand-surface px-3 py-1 rounded-md border border-brand-border">
-          Slide <span id="currentSlideNum">1</span> de <span id="totalSlidesNum">7</span>
+          Slide <span id="currentSlideNum">1</span> de <span id="totalSlidesNum">9</span>
         </div>
         <button onclick="toggleSlideDeck(false)" class="p-2 rounded-lg bg-brand-surface hover:bg-slate-800 text-slate-300 hover:text-white transition-colors">
           <i data-lucide="x" class="w-5 h-5"></i>
@@ -1577,7 +1901,41 @@
           </div>
         </div>
 
-        <!-- SLIDE 6: ADERÊNCIA AO FULL SERVICE -->
+        <!-- SLIDE 6: UPGRADE COMPRESSOR 25 HP -->
+        <div class="slide-item hidden space-y-5">
+          <div class="text-xs font-mono font-bold text-amber-300 uppercase flex items-center gap-1.5">
+            <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i> Opção de Upgrade • 25 HP (18,5 kW)
+          </div>
+          <h2 class="text-2xl sm:text-3xl font-bold font-display text-white">
+            Escalabilidade: Kaeser, Atlas Copco ou Ingersoll Rand
+          </h2>
+          <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+            Iniciamos com o Kaeser SM 15 e monitoramos a demanda durante 3 meses. Havendo necessidade de maior vazão, efetuamos o upgrade imediato para 25 HP conforme disponibilidade de estoque.
+          </p>
+          
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+            <div class="bg-brand-surface border border-amber-500/30 p-3.5 rounded-xl text-center">
+              <img src="./kaeser_25hp.jpg" alt="Kaeser 25 HP" class="h-24 mx-auto object-contain rounded-lg mb-2" />
+              <strong class="text-white text-xs block">Kaeser 25 HP</strong>
+              <span class="text-[10px] text-amber-300 font-mono">Vazão ~3,10 m³/min</span>
+            </div>
+            <div class="bg-brand-surface border border-cyan-500/30 p-3.5 rounded-xl text-center">
+              <img src="./atlas_25hp.jpg" alt="Atlas 25 HP" class="h-24 mx-auto object-contain rounded-lg mb-2" />
+              <strong class="text-white text-xs block">Atlas Copco 25 HP</strong>
+              <span class="text-[10px] text-brand-cyan font-mono">Vazão ~3,00 m³/min</span>
+            </div>
+            <div class="bg-brand-surface border border-teal-500/30 p-3.5 rounded-xl text-center">
+              <img src="./ingersoll_25hp.jpg" alt="Ingersoll 25 HP" class="h-24 mx-auto object-contain rounded-lg mb-2" />
+              <strong class="text-white text-xs block">Ingersoll Rand 25 HP</strong>
+              <span class="text-[10px] text-teal-300 font-mono">Vazão ~2,95 m³/min</span>
+            </div>
+          </div>
+          <div class="p-2.5 rounded-lg bg-brand-dark/80 border border-slate-700 text-center text-xs text-slate-300">
+            * Transição sem multa ou taxas de troca, com manutenção Full Service integral mantida.
+          </div>
+        </div>
+
+        <!-- SLIDE 7: ADERÊNCIA AO FULL SERVICE -->
         <div class="slide-item hidden space-y-6">
           <div class="text-xs font-mono font-bold text-brand-cyan uppercase">Gestão Full Service</div>
           <h2 class="text-2xl sm:text-3xl font-bold font-display text-white">
@@ -1615,7 +1973,51 @@
           </div>
         </div>
 
-        <!-- SLIDE 7: FORMALIZAÇÃO -->
+        <!-- SLIDE 8: PLANOS 25 HP -->
+        <div class="slide-item hidden space-y-6">
+          <div class="text-xs font-mono font-bold text-teal-300 uppercase flex items-center gap-1.5">
+            <i data-lucide="layers" class="w-3.5 h-3.5"></i> Matriz de Planos • Upgrade 25 HP
+          </div>
+          <h2 class="text-2xl sm:text-3xl font-bold font-display text-white">
+            Opções de Contrato para 25 HP (18,5 kW)
+          </h2>
+          
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs">
+            <!-- 36 Meses 25 HP -->
+            <div class="bg-brand-surface border border-teal-500/40 p-5 rounded-xl flex flex-col justify-between">
+              <div>
+                <div class="flex justify-between items-center mb-1">
+                  <span class="font-mono text-teal-300 font-bold uppercase">Upgrade 25 HP</span>
+                  <span class="text-slate-400 font-mono">36 Meses</span>
+                </div>
+                <div class="text-base font-bold text-white">Contrato 36 Meses</div>
+                <div class="text-3xl font-black text-teal-300 font-display my-2">R$ 3.950<span class="text-base">,00</span><span class="text-xs text-slate-400">/mês</span></div>
+                <p class="text-slate-300 text-xs leading-relaxed">Compressor 25 HP (Kaeser, Atlas ou Ingersoll) com Full Service 100% incluso e transição suave após 3 meses.</p>
+              </div>
+              <div class="mt-3 pt-2 border-t border-brand-border text-teal-400 font-semibold text-[11px]">
+                Vazão até 3,10 m³/min • Risco Zero
+              </div>
+            </div>
+
+            <!-- 60 Meses 25 HP -->
+            <div class="bg-brand-surface border-2 border-brand-cyan p-5 rounded-xl flex flex-col justify-between shadow-glow-cyan">
+              <div>
+                <div class="flex justify-between items-center mb-1">
+                  <span class="font-mono text-brand-cyan font-bold uppercase">Melhor Custo 25 HP</span>
+                  <span class="text-brand-cyan font-mono font-bold">60 Meses</span>
+                </div>
+                <div class="text-base font-bold text-white">Contrato 60 Meses (Destaque)</div>
+                <div class="text-3xl font-black text-brand-cyan font-display my-2">R$ 3.490<span class="text-base">,00</span><span class="text-xs text-slate-400">/mês</span></div>
+                <p class="text-slate-300 text-xs leading-relaxed">Menor custo por HP e m³ gerado do mercado. Full Service total com compressor backup e suporte prioritário.</p>
+              </div>
+              <div class="mt-3 pt-2 border-t border-brand-border text-brand-cyan font-semibold text-[11px]">
+                Maior economia e estabilidade de longo prazo
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SLIDE 9: FORMALIZAÇÃO -->
         <div class="slide-item hidden space-y-6 text-center">
           <div class="w-14 h-14 rounded-2xl bg-brand-cyan/20 text-brand-cyan flex items-center justify-center mx-auto mb-2">
             <i data-lucide="check-circle" class="w-8 h-8"></i>
@@ -1628,7 +2030,7 @@
           </p>
 
           <div class="pt-4 flex flex-wrap justify-center gap-3">
-            <a href="https://wa.me/?text=Ol%C3%A1!%20Gostaria%20de%20formalizar%20o%20contrato%20de%20loca%C3%A7%C3%A3o%20do%20Kaeser%20SM%2015%20com%20a%20Myka%20Compressores." target="_blank" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-brand-cyan text-brand-dark font-bold text-sm shadow-glow-cyan">
+            <a href="https://wa.me/?text=Ol%C3%A1!%20Gostaria%20de%20formalizar%20o%20contrato%20de%20loca%C3%A7%C3%A3o%20com%20a%20Myka%20Compressores." target="_blank" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-brand-cyan text-brand-dark font-bold text-sm shadow-glow-cyan">
               <i data-lucide="message-circle" class="w-4 h-4"></i>
               <span>Formalizar via WhatsApp</span>
             </a>
